@@ -5,6 +5,7 @@ project:
     - index.qmd
     - plan-de-cours.qmd
     - calendrier.qmd
+    - devoirs.qmd
     - projet.qmd
     - etudes-de-cas.qmd
   resources:
@@ -31,6 +32,8 @@ website:
         text: Plan de cours
       - href: calendrier.qmd
         text: Calendrier
+      - href: devoirs.qmd
+        text: Devoirs
       - href: projet.qmd
         text: Projet de recherche
       - href: etudes-de-cas.qmd

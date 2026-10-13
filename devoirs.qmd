@@ -1,0 +1,98 @@
+<div class="portal-hero">
+
+<p class="eyebrow">STT-7360 — Méthodes biostatistiques</p>
+
+# Devoirs
+
+<p class="hero-lead">Deux devoirs : modèles mixtes ; GEE et sandwich · 20 % de la note finale.</p>
+
+</div>
+
+::: {.callout-warning}
+## La version Brio fait foi
+
+Les énoncés ci-dessous sont fournis à titre indicatif. La version officielle, avec la date de remise, est celle déposée sur **Brio** : en cas de doute ou de différence entre les deux, c'est l'information sur **Brio** qui prévaut.
+:::
+
+Remettez votre rapport et votre code R dans la boîte de dépôt.
+
+## Devoir 1 · semaine 3
+
+### Exercice 1 · variance d'estimateurs par simulation (10 points)
+
+Soit $n$ réalisations d'une variable aléatoire $Y$ suivant une loi de Bernoulli de moyenne $\theta$. Pour estimer la variance de $\hat\theta = \frac{1}{n}\sum_{i=1}^n Y_i$, on peut se servir de la formule de la variance d'une loi de Bernoulli dans laquelle on substitue $\hat\theta$ à $\theta$ :
+$$\widehat{\operatorname{var}}(\hat\theta) = \frac{\hat\theta(1-\hat\theta)}{n},$$
+ou de $v(\hat\theta) = s^2/n$, où $s^2$ est la variance échantillonnale
+$$s^2 = \frac{1}{n-1}\sum_{i=1}^n (Y_i - \bar Y)^2.$$
+
+a) Dérivez une formule pour la variance de $\hat\theta(1-\hat\theta)$. Si vous utilisez la méthode delta, vous devrez recourir à la méthode delta d'ordre 2 à cause d'une particularité de la variance en $\theta = 1/2$.
+
+b) Validez l'estimateur de la variance de $\hat\theta(1-\hat\theta)$ dérivé en a) et celui de la variance de $s^2$,
+$$v(s^2) = \frac{\hat\mu_4 - \frac{n-3}{n-1}\,s^4}{n}, \qquad \hat\mu_4 = \frac{1}{n}\sum_{i=1}^n (Y_i - \bar Y)^4.$$
+Pour ce faire, effectuez une étude de simulation en générant des échantillons de taille $n = 100$, $1\,000$ et $10\,000$ de $Y$ avec $\theta = 0{,}2$ et $0{,}5$, et calculez $\hat\theta(1-\hat\theta)$ et $s^2$.
+
+c) Comparez le taux de convergence des estimateurs $\hat\theta(1-\hat\theta)$ et $s^2$ en $\theta = 0{,}2$ et $0{,}5$ en examinant l'évolution de leur variance empirique et de la moyenne de l'estimateur de leur variance analytique quand la taille d'échantillon augmente. Les formules de ces variances analytiques permettaient-elles de prédire les taux de convergence observés ? Commentez.
+
+d) Comparez la performance des estimateurs $\widehat{\operatorname{var}}(\hat\theta)$ et $v(\hat\theta)$ à partir des résultats de votre étude de simulation.
+
+### Exercice 2 · modèle logistique mixte, données BSI (10 points)
+
+Les enfants de parents infectés par le VIH vivent des situations stressantes qui peuvent affecter leur développement et leur santé mentale. L'effet de la maladie du parent sur l'enfant peut être aggravé par divers facteurs, dont la consommation de drogues « dures » par le parent. Rotheram-Borus et coll. (2004) ont suivi pendant six ans un échantillon de parents infectés par le VIH résidant à New York et ayant un ou plusieurs adolescents (11 à 21 ans). Vous utiliserez les données de cette étude pour examiner l'effet de la consommation de drogues dures par le parent sur la santé mentale de ses adolescents.
+
+L'état mental des adolescents a été évalué par le *Brief Symptom Inventory* ou BSI (Derogatis et Melisaratos, 1983), un inventaire de 53 symptômes et états d'esprit négatifs couvrant un vaste ensemble de troubles psychologiques (dépression, anxiété, etc.). Chaque symptôme est codé sur une échelle de 0 à 4, et l'indice global de sévérité du BSI est la moyenne arithmétique des scores sur ces 53 items. Un score supérieur ou égal à 1 indique la présence d'un trouble psychologique.
+
+Le jeu de données contient les 215 parents pour lesquels la consommation de drogues dures est connue et leurs 323 enfants adolescents. Les visites de suivi étaient prévues tous les 3 mois pendant au plus 7 ans ; dans les faits, les intervalles entre visites sont souvent irréguliers. Certains parents sont décédés avant la fin du suivi : les données de leurs adolescents sont incluses seulement jusqu'au décès du parent. Le fichier `bsi.csv` contient les variables suivantes :
+
+| Variable | Description |
+|---|---|
+| `pid` | identifiant numérique de l'adolescent |
+| `temps` | temps écoulé depuis le début de l'étude, en mois |
+| `parent` | identifiant numérique du parent |
+| `droguedure` | statut de consommation de drogues dures du parent dans les 3 derniers mois : `"nonconsommateur"`, `"consommateur-courant"` ou `"consommateur-abst"` (consommateur qui s'est abstenu dans les 3 derniers mois) |
+| `dbsi_gsi` | indicatrice d'un score BSI $\ge 1$ (1 = trouble psychologique, 0 = pas de trouble) |
+
+Analysez ces données à l'aide d'un modèle mixte généralisé pour une réponse dichotomique. Pour favoriser la convergence, adoptez le lien logit, lien canonique dans ce contexte. Bien que les enfants soient nichés dans leurs parents, la variabilité expliquée au niveau des parents est négligeable : utilisez des effets aléatoires seulement au niveau des enfants.
+
+a) Présentez graphiquement et décrivez la forme de la relation entre la log-cote de trouble psychologique et le temps par lissage (régression semi-paramétrique). Incluez le statut de consommation de drogues dures comme effet fixe et l'identifiant de l'enfant comme effet aléatoire, mais pas d'interaction entre le statut de consommation et le temps, ni d'effet aléatoire pour le temps (non pris en charge par le module `mgcv`).
+
+Peu importe vos observations en a), adoptez ensuite un modèle de spline linéaire avec changement de pente à 18 mois, en définissant la variable
+
+```r
+bsi$apres18mois <- pmax(0, bsi$temps - 18)
+```
+
+et en l'incluant dans le modèle logistique mixte. Les modèles suivants sont donc paramétriques. Vous rencontrerez probablement des problèmes de convergence pour certains modèles ; si vous n'arrivez pas à les résoudre, répondez en supposant que les estimations des paramètres sont correctes (elles sont généralement raisonnables malgré ces avertissements).
+
+b) Sélectionnez les effets aléatoires du modèle. Incluez dans les modèles comparés des effets fixes pour le temps (y compris le changement de pente à 18 mois), le statut de consommation de drogues dures et leur interaction.
+
+c) Répondez ensuite aux questions suivantes sur les effets fixes. Y a-t-il une interaction entre la consommation de drogues dures par le parent et le temps ? Y a-t-il une différence entre les statuts de consommation ? Si oui, lesquels diffèrent ?
+
+d) Écrivez le modèle retenu aux étapes b) et c) sous forme matricielle, $\operatorname{logit}\left(E[Y_i \mid X_i]\right) = X_i\beta + Z_i\mathbf{b}_i$, où $i = 1, \dots, 323$ indice les enfants. Donnez en particulier les dimensions de $Y_i$, $X_i$ et $Z_i$, et écrivez explicitement $\mathbf{b}_i$ et $\beta$. Quels sont les paramètres du modèle retenu ?
+
+#### Références
+
+- Derogatis, L. R. et Melisaratos, N. (1983). The Brief Symptom Inventory: an introductory report. *Psychological Medicine*, 13(3), 595–605.
+- Rotheram-Borus, M. J., Lee, M. et coll. (2004). Six-year intervention outcomes for adolescent children of parents with the human immunodeficiency virus. *Archives of Pediatrics & Adolescent Medicine*, 158(8), 742–748.
+
+## Devoir 2 · semaine 7
+
+### GEE et modèle log-binomial marginal, pleuropneumonie
+
+Cet exercice utilise le jeu de données de la pleuropneumonie contagieuse bovine, où des échantillons sanguins ont été prélevés tous les 3 mois dans 15 troupeaux en Éthiopie. Au cours 3, un modèle log-binomial mixte a été ajusté à ces données pour estimer le rapport d'incidence entre périodes successives. Vous estimerez ici ces mêmes rapports d'incidence, avec un intervalle de confiance, sous un modèle log-binomial marginal ayant le troupeau comme grappe, à l'aide d'équations d'estimation généralisées.
+
+Ce jeu de données comporte des valeurs manquantes pour certaines périodes chez certains troupeaux. On suppose que seule l'incidence est manquante et que la taille du troupeau est connue à toutes les périodes. Le fichier `cbppw.csv` contient les données en format large, avec la taille des troupeaux à toutes les périodes et les proportions d'incidence `p.1` à `p.4`, pour vous aider à traiter les données manquantes.
+
+a) Expliquez pourquoi une analyse naïve portant uniquement sur les données observées pourrait produire des estimations biaisées.
+
+b) Choisissez une méthode de traitement des données manquantes et justifiez-la. Indiquez les postulats requis sur la nature des valeurs manquantes pour que votre analyse soit valide.
+
+c) Présentez les rapports d'incidence et leurs intervalles de confiance sous un modèle log-binomial marginal ayant le troupeau comme grappe, estimé par GEE avec un traitement approprié des valeurs manquantes.
+
+d) Comparez les estimations des coefficients et de leurs erreurs-types entre le modèle log-binomial marginal et le modèle log-binomial mixte avec effet aléatoire du troupeau du programme `pleuropneumonie.R` du cours 3. Que constatez-vous ?
+
+::: {.callout-tip}
+## Remarques
+
+- Si vous optez pour l'imputation multiple, modélisez les proportions `p.1` à `p.4` comme des variables continues : le module `mice` ne permet pas de modéliser des variables binomiales.
+- Si vous optez pour la pondération par l'inverse de la probabilité de censure, notez qu'il n'y a pas de censure au temps 3 et que la probabilité de censure au temps 4 ne peut être obtenue que pour les troupeaux mesurés aux temps 2 et 3.
+:::

@@ -48,7 +48,7 @@ Le cours couvre les rappels, les simulations, les données corrélées, la théo
 
 | Élément | Poids | Remarques |
 |---|--:|---|
-| Devoirs (2) | 20 % | Modèles mixtes ; GEE et sandwich |
+| [Devoirs](devoirs.qmd) (2) | 20 % | Modèles mixtes ; GEE et sandwich |
 | [Études de cas](etudes-de-cas.qmd) (3) | 25 % | Fiche + reproduction + question ouverte |
 | Présentation d'article et rapport d'arbitrage | 15 % | Évaluation croisée en partie |
 | [Projet de recherche](projet.qmd) | 40 % | Proposition 5 %, rapport d'étape 5 %, présentation 10 %, article 20 % |

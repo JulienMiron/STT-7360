@@ -1,0 +1,15 @@
+/_site/
+/.quarto/
+.Rproj.user/
+.Rhistory
+.RData
+.DS_Store
+**/*.quarto_ipynb
+# fichiers intermédiaires de LaTeX (le plan est compilé localement)
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk

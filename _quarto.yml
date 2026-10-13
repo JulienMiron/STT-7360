@@ -1,0 +1,60 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - plan-de-cours.qmd
+    - calendrier.qmd
+    - projet.qmd
+    - etudes-de-cas.qmd
+  resources:
+    - plan_STT-7360_H27.pdf   # version PDF du plan, compilée localement à partir du .tex
+
+website:
+  title: "STT-7360 Méthodes biostatistiques"
+  site-url: https://julienmiron.ca/STT-7360/
+  repo-url: https://github.com/JulienMiron/STT-7360
+  repo-actions: [issue]
+
+  page-footer:
+    left: "Site de cours STT-7360"
+    center: "[Julien Miron](https://julienmiron.ca/)"
+    right: "Généré avec Quarto"
+
+  navbar:
+    background: "#0E9E6C"
+    foreground: "#ffffff"
+    left:
+      - href: index.qmd
+        text: Accueil
+      - href: plan-de-cours.qmd
+        text: Plan de cours
+      - href: calendrier.qmd
+        text: Calendrier
+      - href: projet.qmd
+        text: Projet de recherche
+      - href: etudes-de-cas.qmd
+        text: Études de cas
+    tools:
+      - icon: download
+        href: plan_STT-7360_H27.pdf
+        text: "Télécharger le plan de cours (PDF)"
+
+lang: fr
+language:
+  title-block-author-single: "Auteur"
+  title-block-modified: "Dernière modification"
+date-modified: last-modified
+date-format: "D MMMM YYYY"
+
+format:
+  html:
+    favicon: images/simulation.svg
+    include-after-body:
+      - date-modification-bas-page.html
+    theme:
+      light: lumen
+    css: styles.css
+    toc: false
+
+editor: source

@@ -1,0 +1,28 @@
+---
+title: "STT-7360"
+---
+
+<script>document.body.classList.add('page-home');</script>
+
+<div class="home-page">
+<div class="home-hero">
+<div class="home-hero__inner">
+<div class="home-hero-copy">
+
+<h1 class="home-title">STT-7360</h1>
+<p class="home-course-code">Méthodes biostatistiques · Hiver 2027</p>
+<p class="home-lead">Un cours de formation à la recherche pour la maîtrise et le doctorat : données corrélées, théorie semi-paramétrique, données manquantes, erreur de mesure et tests multiples, abordés en lisant, en reproduisant et en étendant des articles méthodologiques.</p>
+
+<div class="home-actions">
+<a class="home-action home-action--primary" href="plan-de-cours.html"><span>Plan de cours</span></a>
+<a class="home-action home-action--secondary" href="calendrier.html"><span>Calendrier</span></a>
+<a class="home-action home-action--secondary" href="projet.html"><span>Projet de recherche</span></a>
+</div>
+
+</div>
+<div class="home-visual">
+<img src="images/simulation.svg" alt="">
+</div>
+</div>
+</div>
+</div>

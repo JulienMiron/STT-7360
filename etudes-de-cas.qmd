@@ -1,0 +1,43 @@
+<div class="portal-hero">
+
+<p class="eyebrow">STT-7360 — Méthodes biostatistiques</p>
+
+# Études de cas
+
+<p class="hero-lead">Trois articles, trois livrables courts chacun · 25 % de la note finale.</p>
+
+</div>
+
+## Format
+
+Chaque étude de cas produit trois éléments courts :
+
+1. la **fiche des caractéristiques méthodologiques** : problème, modèle, estimateur, hypothèses, propriétés, validation ;
+2. une **reproduction** d'un tableau ou d'une figure de l'article à partir des données fournies ;
+3. une **question ouverte** : une limite de l'article et une façon de l'étudier.
+
+L'étude de cas 3 prend la forme d'un rapport d'arbitrage, afin d'exercer cette compétence avant les présentations d'articles.
+
+## Étude de cas 1 · semaine 5
+
+**Corrélation entre effets aléatoires et covariables.** Neuhaus, J. M. et McCulloch, C. E. (2006), *Journal of the Royal Statistical Society, Series B*.
+
+- Thème : régression logistique conditionnelle.
+- Données : `naisga.csv`.
+- Livrables : fiche méthodologique + reproduction d'un tableau de l'article.
+
+## Étude de cas 2 · semaine 8
+
+**Méthodes ciblées pour variables continues.** Tuglus, C. et van der Laan, M. J. (2011).
+
+- Thème : TMLE et découverte de biomarqueurs.
+- Données : `genes_select`.
+- Livrables : fiche méthodologique + petite simulation comparant TMLE et régression.
+
+## Étude de cas 3 · semaine 12
+
+**Erreur de mesure et échantillonnage à deux phases.** Breslow, N. E. et Chatterjee, N. (1999), *Journal of the Royal Statistical Society, Series C*.
+
+- Thème : comparaison d'estimateurs sous un plan à deux phases.
+- Données : NWTS.
+- Livrables : fiche méthodologique + rapport d'arbitrage simulé de l'article.

@@ -1,0 +1,83 @@
+<div class="portal-hero">
+
+<p class="eyebrow">STT-7360 — Méthodes biostatistiques</p>
+
+# Plan de cours
+
+<p class="hero-lead">Session d'hiver 2027 · cours orienté vers la formation à la recherche (maîtrise et doctorat).</p>
+
+</div>
+
+::: {.callout-warning}
+## La version Brio fait foi
+
+Ce plan de cours est fourni à titre indicatif. La version officielle est celle déposée sur **Brio** : en cas de doute ou de différence entre les deux, c'est l'information sur **Brio** qui prévaut.
+:::
+
+<a class="portal-button" href="plan_STT-7360_H27.pdf" download>📄 Télécharger le plan de cours (PDF)</a>
+
+## En bref
+
+Le cours couvre les rappels, les simulations, les données corrélées, la théorie semi-paramétrique, les données manquantes, l'erreur de mesure et l'échantillonnage à deux phases, les tests multiples, trois études de cas et des présentations d'articles. L'accent est mis sur l'*exercice du métier de chercheur* plutôt que sur la seule acquisition de méthodes : lire un article méthodologique de façon critique, en reproduire les résultats, évaluer une méthode par simulation, rédiger, arbitrer et présenter. Un [mini-projet de recherche](projet.qmd) s'étend sur toute la session.
+
+## Objectifs de formation
+
+À la fin du cours, l'étudiante ou l'étudiant devrait pouvoir :
+
+**O1. Lire** un article méthodologique en biostatistique et en extraire la structure (problème, modèle, estimateur, hypothèses, propriétés, validation) à l'aide d'une *fiche des caractéristiques méthodologiques*.
+
+**O2. Reproduire** les résultats numériques d'un article (analyse de données et simulations) dans un flux de travail reproductible (R, Quarto/R Markdown, Git).
+
+**O3. Concevoir** une étude de simulation rigoureuse (cadre ADEMP : objectifs, mécanisme générateur, estimand, méthodes, mesures de performance) et en rapporter l'erreur Monte Carlo.
+
+**O4. Mobiliser** les outils théoriques transversaux (fonction d'influence, équations d'estimation, estimateurs sandwich, efficacité semi-paramétrique) pour comprendre *pourquoi* une méthode fonctionne et quand elle échoue.
+
+**O5. Choisir et justifier** une méthode pour des données corrélées, incomplètes, mesurées avec erreur ou soumises à de la multiplicité.
+
+**O6. Communiquer** : rédiger un court article, produire un rapport d'arbitrage et présenter oralement un travail de recherche.
+
+## Principes pédagogiques
+
+- **Un fil conducteur : « de l'article à la méthode, de la méthode à la question ouverte ».** Chaque bloc thématique se termine par une question de recherche plausible (limite d'une méthode, hypothèse non vérifiée, extension naturelle).
+- **La simulation comme outil de recherche**, introduite dès la 2^e^ semaine et réutilisée dans toutes les études de cas et dans le projet.
+- **La théorie comme langage commun.** La fonction d'influence sert de pont entre la robustesse, les équations d'estimation généralisées (GEE), la pondération par l'inverse de la probabilité et les méthodes ciblées (TMLE).
+- **Deux parcours** : un tronc commun, puis des lectures et exercices supplémentaires plus théoriques pour le doctorat (Tsiatis, van der Laan et Rose, Jiang et Nguyen).
+- **Classe active** : lectures préalables, courte présentation magistrale, puis discussion d'article ou atelier de programmation.
+
+## Évaluation
+
+| Élément | Poids | Remarques |
+|---|--:|---|
+| Devoirs (2) | 20 % | Modèles mixtes ; GEE et sandwich |
+| [Études de cas](etudes-de-cas.qmd) (3) | 25 % | Fiche + reproduction + question ouverte |
+| Présentation d'article et rapport d'arbitrage | 15 % | Évaluation croisée en partie |
+| [Projet de recherche](projet.qmd) | 40 % | Proposition 5 %, rapport d'étape 5 %, présentation 10 %, article 20 % |
+
+Les dates de remise sont indiquées dans le [calendrier](calendrier.qmd).
+
+### Différenciation maîtrise / doctorat
+
+Au doctorat : exercices théoriques supplémentaires, article de projet plus long avec une composante théorique, et rôle d'arbitre principal lors des présentations.
+
+## Compétences de recherche transversales
+
+| Compétence | Où elle est travaillée |
+|---|---|
+| Lecture critique | Fiches méthodologiques, études de cas, présentations |
+| Reproductibilité | Atelier de la semaine 1, reproductions, dépôt de code du projet |
+| Simulation | Semaine 2, études de cas 2 et 3, projet |
+| Théorie | Semaines 6, 7 et 11 ; exercices du doctorat |
+| Rédaction scientifique | Proposition, rapport d'étape, article final |
+| Arbitrage | Étude de cas 3, présentations d'articles |
+| Communication orale | Présentations d'articles, colloque de fin de session |
+
+## Références principales
+
+- Dudoit, S. et van der Laan, M. J. (2008). *Multiple Testing Procedures with Applications to Genomics*. Springer.
+- Fitzmaurice, G. M., Laird, N. M. et Ware, J. H. (2011). *Applied Longitudinal Analysis*, 2^e^ éd. Wiley.
+- Jiang, J. et Nguyen, T. (2021). *Linear and Generalized Linear Mixed Models and Their Applications*, 2^e^ éd. Springer.
+- Morris, T. P., White, I. R. et Crowther, M. J. (2019). Using simulation studies to evaluate statistical methods. *Statistics in Medicine*, 38, 2074–2102.
+- Tsiatis, A. A. (2006). *Semiparametric Theory and Missing Data*. Springer.
+- van der Laan, M. J. et Rose, S. (2011). *Targeted Learning*. Springer.
+- Wu, L. (2010). *Mixed Effects Models for Complex Data*. Chapman & Hall/CRC.
+- Articles des études de cas : Neuhaus et McCulloch (2006, *JRSS B*) ; Tuglus et van der Laan (2011) ; Breslow et Chatterjee (1999, *JRSS C*).

@@ -1,0 +1,56 @@
+<div class="portal-hero">
+
+<p class="eyebrow">STT-7360 — Méthodes biostatistiques</p>
+
+# Calendrier
+
+<p class="hero-lead">Hiver 2027 · 15 semaines, semaine de lecture en semaine 9.</p>
+
+</div>
+
+::: {.callout-warning}
+## La version Brio fait foi
+
+Ce calendrier est fourni à titre indicatif. La version officielle est celle déposée sur **Brio** : en cas de doute ou de différence entre les deux, c'est l'information sur **Brio** qui prévaut.
+:::
+
+*M* = tronc commun (maîtrise et doctorat), *D* = complément doctorat.
+
+| Sem. | Thème | Contenu et activités | Volet recherche / livrable |
+|-|---|------|----|
+| 1 | Introduction et rappels | Vraisemblance, modèles linéaires généralisés, inférence asymptotique (notes *Rappel*). Présentation du projet de session. | Atelier : flux de travail reproductible (Git, Quarto, `renv`). |
+| 2 | Simulations | Principes, générateurs, cadre ADEMP, mesures de performance (biais, EQM, couverture), erreur Monte Carlo, parallélisation. | Exercice : critiquer la section « simulations » d'un article publié. |
+| 3 | Données corrélées complexes (I) | Modèles mixtes linéaires et généralisés ; effet conditionnel vs marginal (Wu, ch. 2 ; Fitzmaurice et coll.). *D* : GAM mixtes, Jiang et Nguyen 3.5.2. | [**Devoir 1**]{.cal-exam} (modèles mixtes, données BSI). |
+| 4 | Données corrélées complexes (II) | GEE, estimateur sandwich, comparaison GEE/GLMM (articles Zhang et coll.). | Choix des articles à présenter. |
+| 5 | [**Étude de cas 1**]{.cal-labo} | Neuhaus et McCulloch (2006) : corrélation entre effets aléatoires et covariables ; régression logistique conditionnelle (données `naisga`). | Fiche méthodologique + reproduction d'un tableau de l'article. |
+| 6 | Théorie semi-paramétrique (I) | Fonction d'influence, M-estimateurs, robustesse (Wu, ch. 9 ; Tsiatis, ch. 3). Application : modèle mixte robuste (`SleepStudyRobuste.R`). | [**Proposition de projet**]{.cal-projet} (2 pages). |
+| 7 | Théorie semi-paramétrique (II) | Équations d'estimation, GEE vues comme M-estimation, efficacité. *D* : Tsiatis, ch. 4 ; van der Laan et Rose, ch. 5. | [**Devoir 2**]{.cal-exam} (GEE, pleuropneumonie). |
+| 8 | [**Étude de cas 2**]{.cal-labo} | Méthodes ciblées pour variables continues (Tuglus et van der Laan) ; TMLE, découverte de biomarqueurs. | Fiche méthodologique + petite simulation comparant TMLE et régression. |
+| [9]{.cal-off} | | SEMAINE DE LECTURE — rencontres individuelles sur les projets | |
+| 10 | Données manquantes (I) | Mécanismes MCAR/MAR/MNAR, imputation multiple (Wu, sect. 3.2–3.5). | Exercice d'imputation (données dentaires). |
+| 11 | Données manquantes (II) | Pondération par l'inverse de la probabilité (IPW), estimateurs doublement robustes ; lien avec la fonction d'influence (Wu 10.3.1). | [**Rapport d'étape**]{.cal-projet} du projet (résultats préliminaires). |
+| 12 | [**Étude de cas 3**]{.cal-labo} | Erreur de mesure et échantillonnage à deux phases (Breslow et Chatterjee, 1999 ; données NWTS). Comparaison d'estimateurs. | Fiche méthodologique + rapport d'arbitrage simulé de l'article. |
+| 13 | Tests multiples | FWER, FDR, procédures pas-à-pas, rééchantillonnage (Farcomeni ; Dudoit et van der Laan, données ApoAI). | Résolution de problèmes en équipe. |
+| 14 | [**Présentations d'articles**]{.cal-presentations} | Présentations de 20 min + 10 min de discussion animée par un « arbitre » désigné. | Rapport d'arbitrage écrit (1–2 pages). |
+| 15 | [**Colloque de fin de session**]{.cal-presentations} | Présentations des projets (format congrès : 12 min + questions). | [**Article final**]{.cal-projet} (remis une semaine plus tard). |
+
+<script>
+// Pandoc ne génère pas de colspan pour les tableaux en pipes : on fusionne
+// la ligne de la semaine de lecture (repérée par .cal-off) en une seule
+// cellule pleine largeur après coup.
+(function () {
+  var marqueur = document.querySelector('#quarto-document-content .cal-off');
+  if (!marqueur) return;
+  var ligne = marqueur.closest('tr');
+  if (!ligne || ligne.children.length < 4) return;
+
+  var sujet = ligne.children[2].textContent.trim();
+
+  ligne.innerHTML = '';
+  var cellule = document.createElement('td');
+  cellule.className = 'cal-off cal-off-banner';
+  cellule.colSpan = 4;
+  cellule.textContent = 'Semaine 9 · ' + sujet;
+  ligne.appendChild(cellule);
+})();
+</script>

@@ -1,0 +1,52 @@
+# Génère le site Quarto et le publie sur GitHub Pages.
+# Se déclenche à chaque push sur la branche main (ou manuellement depuis
+# l'onglet Actions). Le site n'exécute aucun code R : pas besoin d'installer R.
+#
+# Prérequis (une seule fois) : Settings → Pages → Source : « GitHub Actions ».
+name: Site STT-7360
+
+on:
+  push:
+    branches: main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Une seule publication à la fois ; la plus récente l'emporte.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  construire:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v5
+
+      - name: Installer Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.10.18"
+
+      - name: Générer le site
+        run: quarto render --to html
+
+      - name: Préparer le site pour GitHub Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  publier:
+    needs: construire
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - name: Publier sur GitHub Pages
+        id: deploiement
+        uses: actions/deploy-pages@v4

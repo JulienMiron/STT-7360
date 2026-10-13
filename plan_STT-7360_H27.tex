@@ -1,0 +1,266 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{booktabs,tabularx,longtable,array}
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=MidnightBlue,urlcolor=MidnightBlue}
+
+\setlist{itemsep=2pt,topsep=4pt}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\newtcolorbox{encadre}[1]{colback=MidnightBlue!4,colframe=MidnightBlue!70,
+  fonttitle=\bfseries,title={#1},arc=1mm,boxrule=0.6pt,left=6pt,right=6pt}
+
+\title{\textbf{STT-7360 Méthodes biostatistiques}\\[2pt]
+\large Proposition de plan pour la session d'hiver 2027\\
+\normalsize Cours orienté vers la formation à la recherche (maîtrise et doctorat)}
+\author{Julien Miron}
+\date{Version de travail --- \today}
+
+\begin{document}
+\maketitle
+
+\begin{encadre}{En bref}
+Le plan conserve l'ossature du cours d'hiver 2026 (rappels, simulations, données corrélées,
+théorie semi-paramétrique, données manquantes, erreur de mesure et échantillonnage à deux phases,
+tests multiples, trois études de cas, présentations d'articles). Il déplace toutefois le centre de
+gravité de l'\emph{acquisition de méthodes} vers l'\emph{exercice du métier de chercheur} :
+lire un article méthodologique de façon critique, en reproduire les résultats, évaluer une méthode
+par simulation, rédiger, arbitrer et présenter. L'examen final est remplacé (ou allégé) par un
+mini-projet de recherche qui s'étend sur toute la session.
+\end{encadre}
+
+\section{Objectifs de formation}
+
+À la fin du cours, l'étudiante ou l'étudiant devrait pouvoir :
+\begin{enumerate}[label=\textbf{O\arabic*.}]
+  \item \textbf{Lire} un article méthodologique en biostatistique et en extraire la structure
+        (problème, modèle, estimateur, hypothèses, propriétés, validation) à l'aide d'une
+        \emph{fiche des caractéristiques méthodologiques}.
+  \item \textbf{Reproduire} les résultats numériques d'un article (analyse de données et
+        simulations) dans un flux de travail reproductible (R, Quarto/R Markdown, Git).
+  \item \textbf{Concevoir} une étude de simulation rigoureuse (cadre ADEMP : objectifs,
+        mécanisme générateur, estimand, méthodes, mesures de performance) et en rapporter
+        l'erreur Monte Carlo.
+  \item \textbf{Mobiliser} les outils théoriques transversaux (fonction d'influence, équations
+        d'estimation, estimateurs sandwich, efficacité semi-paramétrique) pour comprendre
+        \emph{pourquoi} une méthode fonctionne et quand elle échoue.
+  \item \textbf{Choisir et justifier} une méthode pour des données corrélées, incomplètes,
+        mesurées avec erreur ou soumises à de la multiplicité.
+  \item \textbf{Communiquer} : rédiger un court article, produire un rapport d'arbitrage et
+        présenter oralement un travail de recherche.
+\end{enumerate}
+
+\section{Principes pédagogiques}
+
+\begin{itemize}
+  \item \textbf{Un fil conducteur : « de l'article à la méthode, de la méthode à la question
+        ouverte ».} Chaque bloc thématique se termine par une question de recherche plausible
+        (limite d'une méthode, hypothèse non vérifiée, extension naturelle).
+  \item \textbf{La simulation comme outil de recherche}, introduite dès la 2\textsuperscript{e}
+        semaine et réutilisée dans toutes les études de cas et dans le projet.
+  \item \textbf{La théorie comme langage commun.} La fonction d'influence sert de pont entre la
+        robustesse, les équations d'estimation généralisées (GEE), la pondération par
+        l'inverse de la probabilité et les méthodes ciblées (TMLE).
+  \item \textbf{Deux parcours} (comme en 2026) : un tronc commun, puis des lectures et exercices
+        supplémentaires plus théoriques pour le doctorat (Tsiatis, van der Laan et Rose,
+        Jiang et Nguyen).
+  \item \textbf{Classe active} : lectures préalables, courte présentation magistrale,
+        puis discussion d'article ou atelier de programmation.
+\end{itemize}
+
+\section{Calendrier proposé (15 semaines)}
+
+Les semaines sont numérotées ; la semaine de lecture est placée en semaine 9.
+\emph{M} = tronc commun (maîtrise et doctorat), \emph{D} = complément doctorat.
+
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{@{}c L{3.6cm} L{6.3cm} L{4.2cm}@{}}
+\toprule
+\textbf{Sem.} & \textbf{Thème} & \textbf{Contenu et activités} & \textbf{Volet recherche / livrable}\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+1 & Introduction et rappels &
+Vraisemblance, modèles linéaires généralisés, inférence asymptotique (notes \emph{Rappel}).
+Présentation du projet de session. &
+Atelier : flux de travail reproductible (Git, Quarto, \texttt{renv}).\\
+2 & Simulations &
+Principes, générateurs, cadre ADEMP, mesures de performance (biais, EQM, couverture),
+erreur Monte Carlo, parallélisation. &
+Exercice : critiquer la section « simulations » d'un article publié.\\
+3 & Données corrélées complexes (I) &
+Modèles mixtes linéaires et généralisés ; effet conditionnel vs marginal (Wu, ch.~2 ;
+Fitzmaurice et coll.). \emph{D} : GAM mixtes, Jiang et Nguyen 3.5.2. &
+Devoir 1 (modèles mixtes, données BSI).\\
+4 & Données corrélées complexes (II) &
+GEE, estimateur sandwich, comparaison GEE/GLMM (articles Zhang et coll.). &
+Choix des articles à présenter.\\
+5 & \textbf{Étude de cas 1} &
+Neuhaus et McCulloch (2006) : corrélation entre effets aléatoires et covariables ;
+régression logistique conditionnelle (données \texttt{naisga}). &
+Fiche méthodologique + reproduction d'un tableau de l'article.\\
+6 & Théorie semi-paramétrique (I) &
+Fonction d'influence, M-estimateurs, robustesse (Wu, ch.~9 ; Tsiatis, ch.~3).
+Application : modèle mixte robuste (\texttt{SleepStudyRobuste.R}). &
+\textbf{Proposition de projet} (2 pages).\\
+7 & Théorie semi-paramétrique (II) &
+Équations d'estimation, GEE vues comme M-estimation, efficacité.
+\emph{D} : Tsiatis, ch.~4 ; van der Laan et Rose, ch.~5. &
+Devoir 2 (GEE, pleuropneumonie).\\
+8 & \textbf{Étude de cas 2} &
+Méthodes ciblées pour variables continues (Tuglus et van der Laan) ; TMLE, découverte de
+biomarqueurs. &
+Fiche méthodologique + petite simulation comparant TMLE et régression.\\
+9 & \multicolumn{3}{l}{\emph{Semaine de lecture} --- rencontres individuelles sur les projets}\\
+10 & Données manquantes (I) &
+Mécanismes MCAR/MAR/MNAR, imputation multiple (Wu, sect.~3.2--3.5). &
+Exercice d'imputation (données dentaires).\\
+11 & Données manquantes (II) &
+Pondération par l'inverse de la probabilité (IPW), estimateurs doublement robustes ;
+lien avec la fonction d'influence (Wu 10.3.1). &
+\textbf{Rapport d'étape} du projet (résultats préliminaires).\\
+12 & \textbf{Étude de cas 3} &
+Erreur de mesure et échantillonnage à deux phases (Breslow et Chatterjee, 1999 ;
+données NWTS). Comparaison d'estimateurs. &
+Fiche méthodologique + rapport d'arbitrage simulé de l'article.\\
+13 & Tests multiples &
+FWER, FDR, procédures pas-à-pas, rééchantillonnage (Farcomeni ; Dudoit et van der Laan,
+données ApoAI). &
+Résolution de problèmes en équipe.\\
+14 & Présentations d'articles &
+Présentations de 20 min + 10 min de discussion animée par un « arbitre » désigné. &
+Rapport d'arbitrage écrit (1--2 pages).\\
+15 & Colloque de fin de session &
+Présentations des projets (format congrès : 12 min + questions). &
+\textbf{Article final} (remis une semaine plus tard).\\
+\end{longtable}
+
+\section{Le mini-projet de recherche (fil rouge de la session)}
+
+\begin{encadre}{Format : « reproduire, puis étendre »}
+Chaque personne (ou équipe de deux à la maîtrise) choisit un article méthodologique récent,
+idéalement lié à son propre sujet de recherche, en reproduit un résultat clé, puis propose
+\emph{une} extension évaluée par simulation ou par une petite dérivation théorique.
+\end{encadre}
+
+\paragraph{Exemples d'extensions.}
+\begin{itemize}
+  \item Évaluer la sensibilité d'un estimateur à une violation d'hypothèse (mauvaise
+        spécification des effets aléatoires, MNAR, contamination par des valeurs aberrantes).
+  \item Comparer la méthode de l'article à une alternative robuste ou doublement robuste.
+  \item Dériver la fonction d'influence d'un estimateur et en tirer une variance sandwich,
+        puis vérifier la couverture par simulation (\emph{D}).
+  \item Adapter la méthode à un autre type de réponse (binaire, ordinale, de comptage).
+\end{itemize}
+
+\paragraph{Pistes tirées de la liste d'articles 2026.}
+Estimateur sandwich empirique pour la g-computation par espérances conditionnelles itérées
+(Talbot et coll.) ; ACP fonctionnelle comme alternative aux modèles mixtes (Ségalas et coll., 2024) ;
+modèles longitudinaux binomiaux et de comptage, GEE vs GLMM (Zhang et coll.) ;
+modèles mixtes avec erreur de mesure et M-estimateurs pour modèles mixtes (Wu, sect.~5.1--5.2 et 9.4).
+
+\paragraph{Jalons.}
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Semaine & Livrable & Contenu attendu\\
+\midrule
+6  & Proposition & question, article de départ, estimand, plan de simulation ADEMP\\
+9  & Rencontre   & validation du plan et du code de reproduction\\
+11 & Rapport d'étape & reproduction réussie ou écarts expliqués\\
+15 & Présentation & format congrès\\
+16 & Article     & 8--12 pages (maîtrise) ou 12--20 pages (doctorat), code public\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Études de cas : format révisé}
+
+Les trois études de cas de 2026 sont conservées, mais chacune produit trois éléments courts :
+\begin{enumerate}
+  \item la \textbf{fiche des caractéristiques méthodologiques} (déjà utilisée en 2026) ;
+  \item une \textbf{reproduction} d'un tableau ou d'une figure de l'article à partir des données
+        fournies (\texttt{naisga.csv}, \texttt{genes\_select}, données NWTS) ;
+  \item une \textbf{question ouverte} : une limite de l'article et une façon de l'étudier.
+\end{enumerate}
+L'étude de cas 3 prend la forme d'un rapport d'arbitrage, afin d'exercer cette compétence avant
+les présentations d'articles.
+
+\section{Évaluation proposée}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{@{}Y r Y@{}}
+\toprule
+\textbf{Élément} & \textbf{Poids} & \textbf{Remarques}\\
+\midrule
+Devoirs (2) & 20\,\% & modèles mixtes ; GEE et sandwich\\
+Études de cas (3) & 25\,\% & fiche + reproduction + question ouverte\\
+Présentation d'article et rapport d'arbitrage & 15\,\% & évaluation croisée en partie\\
+Projet de recherche & 40\,\% & proposition 5\,\%, rapport d'étape 5\,\%, présentation 10\,\%, article 20\,\%\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\noindent\emph{Variante :} si l'on souhaite garder un examen final (comme en 2026), il peut
+remplacer l'article final (20\,\%) et porter surtout sur la théorie transversale (fonction
+d'influence, équations d'estimation, mécanismes de données manquantes). Les questions de pratique
+et l'examen 2023 existants peuvent servir de base.
+
+\paragraph{Différenciation maîtrise / doctorat.}
+Au doctorat : exercices théoriques supplémentaires (déjà prévus en 2026), article de projet plus
+long avec une composante théorique, et rôle d'arbitre principal lors des présentations.
+
+\section{Compétences de recherche transversales}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{@{}L{4.2cm} Y@{}}
+\toprule
+\textbf{Compétence} & \textbf{Où elle est travaillée}\\
+\midrule
+Lecture critique & fiches méthodologiques, études de cas, présentations\\
+Reproductibilité & atelier de la semaine 1, reproductions, dépôt de code du projet\\
+Simulation & semaine 2, études de cas 2 et 3, projet\\
+Théorie & semaines 6--7 et 11 ; exercices doctorat\\
+Rédaction scientifique & proposition, rapport d'étape, article final\\
+Arbitrage & étude de cas 3, présentations d'articles\\
+Communication orale & présentations d'articles, colloque de fin de session\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Matériel à réutiliser ou à préparer}
+
+\begin{itemize}
+  \item \textbf{Réutilisable tel quel} (site Brio 2026) : notes \emph{Rappel}, \emph{Simulations},
+        \emph{Équations d'estimation}, \emph{Données manquantes}, exercices et solutionnaires
+        (\texttt{.tex}, \texttt{.Rmd}), données des études de cas, examen 2023 et questions de pratique.
+  \item \textbf{À adapter} : notes de cours en \texttt{.docx} (cours 3, semi-paramétrique,
+        données manquantes, cours 10) à convertir en LaTeX/Quarto pour uniformiser ;
+        mise à jour de la liste d'articles pour présentation.
+  \item \textbf{À créer} : guide du projet (gabarit d'article et grille), gabarit de rapport
+        d'arbitrage, gabarit ADEMP, grilles d'évaluation des présentations, gabarit de dépôt Git.
+\end{itemize}
+
+\section*{Références principales}
+\begin{itemize}[leftmargin=*,label={}]\small
+  \item Dudoit, S. et van der Laan, M. J. (2008). \emph{Multiple Testing Procedures with Applications to Genomics}. Springer.
+  \item Fitzmaurice, G. M., Laird, N. M. et Ware, J. H. (2011). \emph{Applied Longitudinal Analysis}, 2\textsuperscript{e} éd. Wiley.
+  \item Jiang, J. et Nguyen, T. (2021). \emph{Linear and Generalized Linear Mixed Models and Their Applications}, 2\textsuperscript{e} éd. Springer.
+  \item Morris, T. P., White, I. R. et Crowther, M. J. (2019). Using simulation studies to evaluate statistical methods. \emph{Statistics in Medicine}, 38, 2074--2102.
+  \item Tsiatis, A. A. (2006). \emph{Semiparametric Theory and Missing Data}. Springer.
+  \item van der Laan, M. J. et Rose, S. (2011). \emph{Targeted Learning}. Springer.
+  \item Wu, L. (2010). \emph{Mixed Effects Models for Complex Data}. Chapman \& Hall/CRC.
+  \item Articles des études de cas : Neuhaus et McCulloch (2006, \emph{JRSS B}) ; Tuglus et van der Laan (2011) ; Breslow et Chatterjee (1999, \emph{JRSS C}).
+\end{itemize}
+
+\end{document}

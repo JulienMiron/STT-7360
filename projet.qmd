@@ -1,0 +1,53 @@
+<div class="portal-hero">
+
+<p class="eyebrow">STT-7360 — Méthodes biostatistiques</p>
+
+# Projet de recherche
+
+<p class="hero-lead">Le fil rouge de la session · 40 % de la note finale.</p>
+
+</div>
+
+::: {.callout-note}
+## Format : « reproduire, puis étendre »
+
+Chaque personne (ou équipe de deux à la maîtrise) choisit un article méthodologique récent, idéalement lié à son propre sujet de recherche, en reproduit un résultat clé, puis propose *une* extension évaluée par simulation ou par une petite dérivation théorique.
+:::
+
+## Jalons
+
+| Semaine | Livrable | Contenu attendu | Poids |
+|:-:|---|---|--:|
+| 6 | [**Proposition**]{.cal-projet} | Question, article de départ, estimand, plan de simulation ADEMP (2 pages) | 5 % |
+| 9 | Rencontre | Validation du plan et du code de reproduction | — |
+| 11 | [**Rapport d'étape**]{.cal-projet} | Reproduction réussie ou écarts expliqués | 5 % |
+| 15 | [**Présentation**]{.cal-presentations} | Format congrès : 12 min + questions | 10 % |
+| 16 | [**Article**]{.cal-projet} | 8–12 pages (maîtrise) ou 12–20 pages (doctorat), code public | 20 % |
+
+Au doctorat, l'article comporte une composante théorique.
+
+## Exemples d'extensions
+
+- Évaluer la sensibilité d'un estimateur à une violation d'hypothèse (mauvaise spécification des effets aléatoires, MNAR, contamination par des valeurs aberrantes).
+- Comparer la méthode de l'article à une alternative robuste ou doublement robuste.
+- Dériver la fonction d'influence d'un estimateur et en tirer une variance sandwich, puis vérifier la couverture par simulation (*D*).
+- Adapter la méthode à un autre type de réponse (binaire, ordinale, de comptage).
+
+## Pistes d'articles
+
+- Estimateur sandwich empirique pour la g-computation par espérances conditionnelles itérées (Talbot et coll.).
+- ACP fonctionnelle comme alternative aux modèles mixtes (Ségalas et coll., 2024).
+- Modèles longitudinaux binomiaux et de comptage, GEE vs GLMM (Zhang et coll.).
+- Modèles mixtes avec erreur de mesure et M-estimateurs pour modèles mixtes (Wu, sect. 5.1–5.2 et 9.4).
+
+## Simulation : le cadre ADEMP
+
+Le plan de simulation de la proposition suit le cadre ADEMP de Morris, White et Crowther (2019) :
+
+| Lettre | Élément | À préciser |
+|:-:|---|---|
+| A | *Aims* : objectifs | Quelle question la simulation doit-elle trancher ? |
+| D | *Data-generating mechanism* : mécanisme générateur | Modèle, paramètres, tailles d'échantillon, scénarios |
+| E | *Estimand* | La quantité visée |
+| M | *Methods* : méthodes | Les estimateurs comparés |
+| P | *Performance measures* : mesures de performance | Biais, EQM, couverture, avec leur erreur Monte Carlo |

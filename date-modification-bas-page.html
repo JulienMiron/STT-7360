@@ -1,0 +1,13 @@
+<script>
+// Déplace le bloc « Dernière modification » (généré par Quarto en haut de page)
+// vers le bas du contenu. N'a aucun effet sur la page d'accueil, dont le
+// bloc de titre est déjà masqué.
+(function () {
+  if (document.body.classList.contains('page-home')) return;
+  var meta = document.querySelector('.quarto-title-meta');
+  var content = document.getElementById('quarto-document-content');
+  if (meta && content) {
+    content.appendChild(meta);
+  }
+})();
+</script>

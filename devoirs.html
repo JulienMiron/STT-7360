@@ -324,8 +324,8 @@ Deux devoirs : modèles mixtes ; GEE et sandwich · 20 % de la note finale.
 <h2 class="anchored" data-anchor-id="devoir-2-semaine-7">Devoir 2 · semaine 7</h2>
 <section id="gee-et-modèle-log-binomial-marginal-pleuropneumonie" class="level3">
 <h3 class="anchored" data-anchor-id="gee-et-modèle-log-binomial-marginal-pleuropneumonie">GEE et modèle log-binomial marginal, pleuropneumonie</h3>
-<p>Cet exercice utilise le jeu de données de la pleuropneumonie contagieuse bovine, où des échantillons sanguins ont été prélevés tous les 3 mois dans 15 troupeaux en Éthiopie. Au cours 3, un modèle log-binomial mixte a été ajusté à ces données pour estimer le rapport d’incidence entre périodes successives. Vous estimerez ici ces mêmes rapports d’incidence, avec un intervalle de confiance, sous un modèle log-binomial marginal ayant le troupeau comme grappe, à l’aide d’équations d’estimation généralisées.</p>
-<p>Ce jeu de données comporte des valeurs manquantes pour certaines périodes chez certains troupeaux. On suppose que seule l’incidence est manquante et que la taille du troupeau est connue à toutes les périodes. Le fichier <code>cbppw.csv</code> contient les données en format large, avec la taille des troupeaux à toutes les périodes et les proportions d’incidence <code>p.1</code> à <code>p.4</code>, pour vous aider à traiter les données manquantes.</p>
+<p>Cet exercice utilise le jeu de données de la pleuropneumonie contagieuse bovine (<code>cbpp</code> du module R <code>lme4</code> ; Lesnoff et coll., 2004), où des échantillons sanguins ont été prélevés tous les 3 mois dans 15 troupeaux en Éthiopie. Au cours 3, un modèle log-binomial mixte a été ajusté à ces données pour estimer le rapport d’incidence entre périodes successives. Vous estimerez ici ces mêmes rapports d’incidence, avec un intervalle de confiance, sous un modèle log-binomial marginal ayant le troupeau comme grappe, à l’aide d’équations d’estimation généralisées.</p>
+<p>Ce jeu de données comporte des valeurs manquantes pour certaines périodes chez certains troupeaux. On suppose que seule l’incidence est manquante et que la taille du troupeau est connue à toutes les périodes. Le fichier <a href="donnees/cbppw.csv"><code>cbppw.csv</code></a> contient les données en format large, avec la taille des troupeaux à toutes les périodes et les proportions d’incidence <code>p.1</code> à <code>p.4</code>, pour vous aider à traiter les données manquantes.</p>
 <ol type="a">
 <li><p>Expliquez pourquoi une analyse naïve portant uniquement sur les données observées pourrait produire des estimations biaisées.</p></li>
 <li><p>Choisissez une méthode de traitement des données manquantes et justifiez-la. Indiquez les postulats requis sur la nature des valeurs manquantes pour que votre analyse soit valide.</p></li>
@@ -348,8 +348,14 @@ Deux devoirs : modèles mixtes ; GEE et sandwich · 20 % de la note finale.
 </ul>
 </div>
 </div>
+<section id="référence" class="level4">
+<h4 class="anchored" data-anchor-id="référence">Référence</h4>
+<ul>
+<li>Lesnoff, M., Laval, G., Bonnet, P. et coll. (2004). Within-herd spread of contagious bovine pleuropneumonia in Ethiopian highlands. <em>Preventive Veterinary Medicine</em>, 64(1), 27–40.</li>
+</ul>
 
 
+</section>
 </section>
 </section>
 

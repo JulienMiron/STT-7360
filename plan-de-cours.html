@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d879eba7f9f7abf158eeecada124be5f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f28db2f28e40bd2319d0714e6e487a7d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,16 +108,20 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Calendrier</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./notes.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./devoirs.html"> 
 <span class="menu-text">Devoirs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projet.html"> 
-<span class="menu-text">Projet de recherche</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./etudes-de-cas.html"> 
 <span class="menu-text">Études de cas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./travail-de-synthese.html"> 
+<span class="menu-text">Synthèse</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -148,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Dernière modification</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">14 octobre 2026</p>
+      <p class="date-modified">28 octobre 2026</p>
     </div>
   </div>
     
@@ -166,7 +170,7 @@ STT-7360 — Méthodes biostatistiques
 <section id="plan-de-cours" class="level1">
 <h1>Plan de cours</h1>
 <p class="hero-lead">
-Session d’hiver 2027 · cours orienté vers la formation à la recherche (maîtrise et doctorat).
+Hiver 2027 · vendredi, 8 h 30 à 11 h 20 · maîtrise et doctorat.
 </p>
 </section>
 </div>
@@ -184,126 +188,96 @@ Session d’hiver 2027 · cours orienté vers la formation à la recherche (maî
 </div>
 </div>
 <p><a class="portal-button" href="plan_STT-7360_H27.pdf" download="">📄 Télécharger le plan de cours (PDF)</a></p>
-<section id="en-bref" class="level2">
-<h2 class="anchored" data-anchor-id="en-bref">En bref</h2>
-<p>Le cours couvre les rappels, les simulations, les données corrélées, la théorie semi-paramétrique, les données manquantes, l’erreur de mesure et l’échantillonnage à deux phases, les tests multiples, trois études de cas et des présentations d’articles. L’accent est mis sur l’<em>exercice du métier de chercheur</em> plutôt que sur la seule acquisition de méthodes : lire un article méthodologique de façon critique, en reproduire les résultats, évaluer une méthode par simulation, rédiger, arbitrer et présenter. Un <a href="./projet.html">mini-projet de recherche</a> s’étend sur toute la session.</p>
+<section id="description" class="level2">
+<h2 class="anchored" data-anchor-id="description">Description</h2>
+<p>Ce cours présente des méthodes statistiques avancées pour l’analyse de données biomédicales complexes : données corrélées (longitudinales ou groupées), modèles comportant des paramètres de nuisance de grande dimension, données manquantes ou incomplètes par devis, et problèmes de tests multiples. L’accent porte sur la compréhension des méthodes d’estimation et d’inférence, sur leur justification théorique et sur leur mise en œuvre en R. Le cours apprend aussi à lire un article méthodologique, à en extraire les choix statistiques et à reproduire ses analyses.</p>
+<p>Le cours s’adresse aux étudiantes et étudiants de maîtrise et de doctorat en statistique et en biostatistique. Un contenu supplémentaire, signalé dans les notes par un encadré « Niveau doctorat », porte sur la théorie de l’estimation semi-paramétrique ; il fait l’objet d’exercices et d’une question d’examen réservés au 3<sup>e</sup> cycle.</p>
 </section>
-<section id="objectifs-de-formation" class="level2">
-<h2 class="anchored" data-anchor-id="objectifs-de-formation">Objectifs de formation</h2>
-<p>À la fin du cours, l’étudiante ou l’étudiant devrait pouvoir :</p>
-<p><strong>O1. Lire</strong> un article méthodologique en biostatistique et en extraire la structure (problème, modèle, estimateur, hypothèses, propriétés, validation) à l’aide d’une <em>fiche des caractéristiques méthodologiques</em>.</p>
-<p><strong>O2. Reproduire</strong> les résultats numériques d’un article (analyse de données et simulations) dans un flux de travail reproductible (R, Quarto/R Markdown, Git).</p>
-<p><strong>O3. Concevoir</strong> une étude de simulation rigoureuse (cadre ADEMP : objectifs, mécanisme générateur, estimand, méthodes, mesures de performance) et en rapporter l’erreur Monte Carlo.</p>
-<p><strong>O4. Mobiliser</strong> les outils théoriques transversaux (fonction d’influence, équations d’estimation, estimateurs sandwich, efficacité semi-paramétrique) pour comprendre <em>pourquoi</em> une méthode fonctionne et quand elle échoue.</p>
-<p><strong>O5. Choisir et justifier</strong> une méthode pour des données corrélées, incomplètes, mesurées avec erreur ou soumises à de la multiplicité.</p>
-<p><strong>O6. Communiquer</strong> : rédiger un court article, produire un rapport d’arbitrage et présenter oralement un travail de recherche.</p>
+<section id="fil-conducteur-la-grille-méthodologique" class="level2">
+<h2 class="anchored" data-anchor-id="fil-conducteur-la-grille-méthodologique">Fil conducteur : la grille méthodologique</h2>
+<p>Chaque méthode vue en classe et chaque article étudié sont analysés selon la même grille, qui structure aussi les études de cas, le travail de synthèse et l’examen final :</p>
+<ol type="1">
+<li>l’objet statistique d’intérêt ;</li>
+<li>les paramètres nuisibles, les données manquantes et les sources de biais ;</li>
+<li>l’approche retenue pour traiter la nuisance ou éviter le biais ;</li>
+<li>le critère d’estimation ou de test ;</li>
+<li>la méthode d’optimisation ou de calcul ;</li>
+<li>l’obtention de la distribution des statistiques (inférence).</li>
+</ol>
 </section>
-<section id="principes-pédagogiques" class="level2">
-<h2 class="anchored" data-anchor-id="principes-pédagogiques">Principes pédagogiques</h2>
-<ul>
-<li><strong>Un fil conducteur : « de l’article à la méthode, de la méthode à la question ouverte ».</strong> Chaque bloc thématique se termine par une question de recherche plausible (limite d’une méthode, hypothèse non vérifiée, extension naturelle).</li>
-<li><strong>La simulation comme outil de recherche</strong>, introduite dès la 2<sup>e</sup> semaine et réutilisée dans toutes les études de cas et dans le projet.</li>
-<li><strong>La théorie comme langage commun.</strong> La fonction d’influence sert de pont entre la robustesse, les équations d’estimation généralisées (GEE), la pondération par l’inverse de la probabilité et les méthodes ciblées (TMLE).</li>
-<li><strong>Deux parcours</strong> : un tronc commun, puis des lectures et exercices supplémentaires plus théoriques pour le doctorat (Tsiatis, van der Laan et Rose, Jiang et Nguyen).</li>
-<li><strong>Classe active</strong> : lectures préalables, courte présentation magistrale, puis discussion d’article ou atelier de programmation.</li>
-</ul>
+<section id="objectifs-dapprentissage" class="level2">
+<h2 class="anchored" data-anchor-id="objectifs-dapprentissage">Objectifs d’apprentissage</h2>
+<p>À la fin du cours, l’étudiante ou l’étudiant sera en mesure de :</p>
+<ol type="1">
+<li>utiliser les outils asymptotiques (convergence, théorème de Slutsky, méthode delta, estimateurs M) pour obtenir la loi d’un estimateur ;</li>
+<li>concevoir une étude de simulation qui valide un estimateur, l’estimateur de sa variance, un intervalle de confiance ou un test ;</li>
+<li>formuler, estimer et interpréter un modèle linéaire mixte généralisé ou un modèle additif généralisé (mixte), et choisir la méthode d’approximation de la vraisemblance ;</li>
+<li>distinguer les effets individuels des effets marginaux et choisir entre un modèle mixte et des équations d’estimation généralisées ;</li>
+<li>dériver une fonction d’influence, en tirer un estimateur robuste de la variance et construire un estimateur robuste aux valeurs extrêmes ;</li>
+<li>(doctorat) situer les équations d’estimation généralisées et l’estimation ciblée dans la théorie semi-paramétrique ;</li>
+<li>reconnaître un mécanisme de données manquantes et appliquer la vraisemblance des données observées, l’imputation multiple ou la pondération par probabilité inverse ;</li>
+<li>contrôler l’erreur de première espèce d’une famille de tests (FWER, FDR) ;</li>
+<li>présenter un article méthodologique et implanter la méthode qu’il décrit.</li>
+</ol>
+</section>
+<section id="formule-pédagogique" class="level2">
+<h2 class="anchored" data-anchor-id="formule-pédagogique">Formule pédagogique</h2>
+<p>Chaque séance de trois heures combine un exposé théorique appuyé sur des <a href="./notes.html">notes de cours</a> détaillées et des exemples traités en R. Les séances d’<a href="./etudes-de-cas.html">étude de cas</a> portent sur un article : on le lit à l’avance, on remplit la fiche des caractéristiques méthodologiques et on prépare les exercices proposés, qui sont corrigés en classe. Les études de cas ne sont pas évaluées, mais leur préparation est essentielle à la réussite du travail de synthèse et de l’examen final.</p>
 </section>
 <section id="évaluation" class="level2">
 <h2 class="anchored" data-anchor-id="évaluation">Évaluation</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Élément</th>
+<th>Évaluation</th>
 <th style="text-align: right;">Poids</th>
-<th>Remarques</th>
+<th>Échéance</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="./devoirs.html">Devoirs</a> (2)</td>
+<td><a href="./devoirs.html">Devoir 1</a></td>
 <td style="text-align: right;">20 %</td>
-<td>Modèles mixtes ; GEE et sandwich</td>
+<td>vendredi 26 février 2027, 23 h 55</td>
 </tr>
 <tr class="even">
-<td><a href="./etudes-de-cas.html">Études de cas</a> (3)</td>
-<td style="text-align: right;">25 %</td>
-<td>Fiche + reproduction + question ouverte</td>
+<td><a href="./devoirs.html">Devoir 2</a></td>
+<td style="text-align: right;">20 %</td>
+<td>vendredi 23 avril 2027, 23 h 55</td>
 </tr>
 <tr class="odd">
-<td>Présentation d’article et rapport d’arbitrage</td>
-<td style="text-align: right;">15 %</td>
-<td>Évaluation croisée en partie</td>
+<td><a href="./travail-de-synthese.html">Travail de synthèse et présentation orale</a></td>
+<td style="text-align: right;">30 %</td>
+<td>présentation le 16 ou le 23 avril 2027</td>
 </tr>
 <tr class="even">
-<td><a href="./projet.html">Projet de recherche</a></td>
-<td style="text-align: right;">40 %</td>
-<td>Proposition 5 %, rapport d’étape 5 %, présentation 10 %, article 20 %</td>
+<td>Examen final</td>
+<td style="text-align: right;">30 %</td>
+<td>période d’examens (26 avril au 2 mai 2027)</td>
 </tr>
 </tbody>
 </table>
-<p>Les dates de remise sont indiquées dans le <a href="./calendrier.html">calendrier</a>.</p>
-<section id="différenciation-maîtrise-doctorat" class="level3">
-<h3 class="anchored" data-anchor-id="différenciation-maîtrise-doctorat">Différenciation maîtrise / doctorat</h3>
-<p>Au doctorat : exercices théoriques supplémentaires, article de projet plus long avec une composante théorique, et rôle d’arbitre principal lors des présentations.</p>
+<p>L’examen final est un examen de résolution de problèmes de 2 h 50, sans ordinateur. Le barème diffère entre la maîtrise et le doctorat, et une question est réservée au doctorat.</p>
 </section>
-</section>
-<section id="compétences-de-recherche-transversales" class="level2">
-<h2 class="anchored" data-anchor-id="compétences-de-recherche-transversales">Compétences de recherche transversales</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Compétence</th>
-<th>Où elle est travaillée</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lecture critique</td>
-<td>Fiches méthodologiques, études de cas, présentations</td>
-</tr>
-<tr class="even">
-<td>Reproductibilité</td>
-<td>Atelier de la semaine 1, reproductions, dépôt de code du projet</td>
-</tr>
-<tr class="odd">
-<td>Simulation</td>
-<td>Semaine 2, études de cas 2 et 3, projet</td>
-</tr>
-<tr class="even">
-<td>Théorie</td>
-<td>Semaines 6, 7 et 11 ; exercices du doctorat</td>
-</tr>
-<tr class="odd">
-<td>Rédaction scientifique</td>
-<td>Proposition, rapport d’étape, article final</td>
-</tr>
-<tr class="even">
-<td>Arbitrage</td>
-<td>Étude de cas 3, présentations d’articles</td>
-</tr>
-<tr class="odd">
-<td>Communication orale</td>
-<td>Présentations d’articles, colloque de fin de session</td>
-</tr>
-</tbody>
-</table>
+<section id="préalables" class="level2">
+<h2 class="anchored" data-anchor-id="préalables">Préalables</h2>
+<p>Inférence statistique de niveau avancé (maximum de vraisemblance, tests de Wald, du rapport de vraisemblances et du score), modèles linéaires généralisés, notions de modèle linéaire mixte et programmation en R.</p>
 </section>
 <section id="références-principales" class="level2">
 <h2 class="anchored" data-anchor-id="références-principales">Références principales</h2>
 <ul>
+<li>Wu, L. (2010). <em>Mixed Effects Models for Complex Data</em>. Chapman &amp; Hall/CRC (manuel principal).</li>
+<li>Breslow, N. E. et Chatterjee, N. (1999). Design and analysis of two-phase studies with binary outcome applied to Wilms tumour prognosis. <em>Applied Statistics</em>, 48(4), 457–468.</li>
 <li>Dudoit, S. et van der Laan, M. J. (2008). <em>Multiple Testing Procedures with Applications to Genomics</em>. Springer.</li>
-<li>Fitzmaurice, G. M., Laird, N. M. et Ware, J. H. (2011). <em>Applied Longitudinal Analysis</em>, 2<sup>e</sup> éd. Wiley.</li>
+<li>Farcomeni, A. (2010). Multiple testing procedures. Ch. 3 de <em>Medical Biostatistics for Complex Diseases</em>. Wiley.</li>
+<li>Fitzmaurice, G., Laird, N. et Ware, J. (2011). <em>Applied Longitudinal Analysis</em>, 2<sup>e</sup> éd. Wiley.</li>
 <li>Jiang, J. et Nguyen, T. (2021). <em>Linear and Generalized Linear Mixed Models and Their Applications</em>, 2<sup>e</sup> éd. Springer.</li>
-<li>Morris, T. P., White, I. R. et Crowther, M. J. (2019). Using simulation studies to evaluate statistical methods. <em>Statistics in Medicine</em>, 38, 2074–2102.</li>
+<li>Neuhaus, J. M. et McCulloch, C. E. (2006). Separating between- and within-cluster covariate effects by using conditional and partitioning methods. <em>JRSS B</em>, 68(5), 859–872.</li>
 <li>Tsiatis, A. A. (2006). <em>Semiparametric Theory and Missing Data</em>. Springer.</li>
 <li>van der Laan, M. J. et Rose, S. (2011). <em>Targeted Learning</em>. Springer.</li>
-<li>Wu, L. (2010). <em>Mixed Effects Models for Complex Data</em>. Chapman &amp; Hall/CRC.</li>
-<li>Articles des études de cas : Neuhaus et McCulloch (2006, <em>JRSS B</em>) ; Tuglus et van der Laan (2011) ; Breslow et Chatterjee (1999, <em>JRSS C</em>).</li>
+<li>Wood, S. N. (2017). <em>Generalized Additive Models: An Introduction with R</em>, 2<sup>e</sup> éd. Chapman &amp; Hall/CRC.</li>
 </ul>
+<p>Logiciel : R, avec notamment <code>lme4</code>, <code>mgcv</code>, <code>gee</code>, <code>geepack</code>, <code>mice</code>, <code>survival</code>, <code>osDesign</code> et <code>multtest</code> (Bioconductor).</p>
 
 
 </section>

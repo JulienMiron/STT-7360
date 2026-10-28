@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://julienmiron.ca/STT-7360/etudes-de-cas.html</loc>
-    <lastmod>2026-10-14T00:31:42.380Z</lastmod>
+    <loc>https://julienmiron.ca/STT-7360/travail-de-synthese.html</loc>
+    <lastmod>2026-10-28T23:36:07.904Z</lastmod>
   </url>
   <url>
     <loc>https://julienmiron.ca/STT-7360/devoirs.html</loc>
-    <lastmod>2026-10-14T00:31:42.380Z</lastmod>
-  </url>
-  <url>
-    <loc>https://julienmiron.ca/STT-7360/plan-de-cours.html</loc>
-    <lastmod>2026-10-14T00:31:42.380Z</lastmod>
-  </url>
-  <url>
-    <loc>https://julienmiron.ca/STT-7360/index.html</loc>
-    <lastmod>2026-10-14T00:31:42.380Z</lastmod>
+    <lastmod>2026-10-28T23:36:07.868Z</lastmod>
   </url>
   <url>
     <loc>https://julienmiron.ca/STT-7360/calendrier.html</loc>
-    <lastmod>2026-10-14T00:31:42.380Z</lastmod>
+    <lastmod>2026-10-28T23:36:07.863Z</lastmod>
   </url>
   <url>
-    <loc>https://julienmiron.ca/STT-7360/projet.html</loc>
-    <lastmod>2026-10-14T00:31:42.382Z</lastmod>
+    <loc>https://julienmiron.ca/STT-7360/index.html</loc>
+    <lastmod>2026-10-28T23:36:07.868Z</lastmod>
+  </url>
+  <url>
+    <loc>https://julienmiron.ca/STT-7360/plan-de-cours.html</loc>
+    <lastmod>2026-10-28T23:36:07.899Z</lastmod>
+  </url>
+  <url>
+    <loc>https://julienmiron.ca/STT-7360/notes.html</loc>
+    <lastmod>2026-10-28T23:36:07.868Z</lastmod>
+  </url>
+  <url>
+    <loc>https://julienmiron.ca/STT-7360/etudes-de-cas.html</loc>
+    <lastmod>2026-10-28T23:36:07.868Z</lastmod>
   </url>
 </urlset>

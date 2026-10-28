@@ -1,156 +1,163 @@
 [
   {
-    "objectID": "etudes-de-cas.html",
-    "href": "etudes-de-cas.html",
-    "title": "Études de cas",
+    "objectID": "travail-de-synthese.html",
+    "href": "travail-de-synthese.html",
+    "title": "Travail de synthèse",
     "section": "",
-    "text": "STT-7360 — Méthodes biostatistiques\n\n\n\n\nTrois articles, trois livrables courts chacun · 25 % de la note finale."
+    "text": "STT-7360 — Méthodes biostatistiques\n\n\n\n\nPrésentation orale d’un article et implantation de la méthode · 30 % de la note finale.\n📄 Consignes, grille et gabarit de fiche de lecture (PDF)"
   },
   {
-    "objectID": "etudes-de-cas.html#format",
-    "href": "etudes-de-cas.html#format",
-    "title": "Études de cas",
-    "section": "Format",
-    "text": "Format\nChaque étude de cas produit trois éléments courts :\n\nla fiche des caractéristiques méthodologiques : problème, modèle, estimateur, hypothèses, propriétés, validation ;\nune reproduction d’un tableau ou d’une figure de l’article à partir des données fournies ;\nune question ouverte : une limite de l’article et une façon de l’étudier.\n\nL’étude de cas 3 prend la forme d’un rapport d’arbitrage, afin d’exercer cette compétence avant les présentations d’articles."
+    "objectID": "travail-de-synthese.html#échéances",
+    "href": "travail-de-synthese.html#échéances",
+    "title": "Travail de synthèse",
+    "section": "Échéances",
+    "text": "Échéances\n\n\n\n\n\n\n\nÉtape\nDate\n\n\n\n\nChoix de l’article (par courriel, avec un deuxième choix)\nvendredi 19 février 2027\n\n\nConfirmation de l’article et de la date de présentation\nvendredi 26 février 2027\n\n\nDépôt du code documenté et des diapos (Brio)\nla veille de la présentation, 23 h 55\n\n\nPrésentation (20 min + 10 min de questions)\nvendredi 16 ou 23 avril 2027"
   },
   {
-    "objectID": "etudes-de-cas.html#étude-de-cas-1-semaine-5",
-    "href": "etudes-de-cas.html#étude-de-cas-1-semaine-5",
-    "title": "Études de cas",
-    "section": "Étude de cas 1 · semaine 5",
-    "text": "Étude de cas 1 · semaine 5\nCorrélation entre effets aléatoires et covariables. Neuhaus, J. M. et McCulloch, C. E. (2006), Journal of the Royal Statistical Society, Series B.\n\nThème : régression logistique conditionnelle.\nDonnées : naisga.csv.\nLivrables : fiche méthodologique + reproduction d’un tableau de l’article."
+    "objectID": "travail-de-synthese.html#grille-de-correction-100-points",
+    "href": "travail-de-synthese.html#grille-de-correction-100-points",
+    "title": "Travail de synthèse",
+    "section": "Grille de correction (100 points)",
+    "text": "Grille de correction (100 points)\n\n\n\nCritère\nPoints\n\n\n\n\nCompréhension et exposé de la méthode\n20\n\n\nGrille méthodologique\n10\n\n\nImplantation, code et reproductibilité\n25\n\n\nRésultats et interprétation\n15\n\n\nRegard critique\n10\n\n\nPrésentation orale\n10\n\n\nRéponses aux questions\n10\n\n\n\nLes descripteurs de niveaux (excellent, satisfaisant, insuffisant), les attentes supplémentaires au doctorat et les bonus pour la fiche de lecture et les exercices sont détaillés dans le PDF."
   },
   {
-    "objectID": "etudes-de-cas.html#étude-de-cas-2-semaine-8",
-    "href": "etudes-de-cas.html#étude-de-cas-2-semaine-8",
-    "title": "Études de cas",
-    "section": "Étude de cas 2 · semaine 8",
-    "text": "Étude de cas 2 · semaine 8\nMéthodes ciblées pour variables continues. Tuglus, C. et van der Laan, M. J. (2011).\n\nThème : TMLE et découverte de biomarqueurs.\nDonnées : genes_select.\nLivrables : fiche méthodologique + petite simulation comparant TMLE et régression."
-  },
-  {
-    "objectID": "etudes-de-cas.html#étude-de-cas-3-semaine-12",
-    "href": "etudes-de-cas.html#étude-de-cas-3-semaine-12",
-    "title": "Études de cas",
-    "section": "Étude de cas 3 · semaine 12",
-    "text": "Étude de cas 3 · semaine 12\nErreur de mesure et échantillonnage à deux phases. Breslow, N. E. et Chatterjee, N. (1999), Journal of the Royal Statistical Society, Series C.\n\nThème : comparaison d’estimateurs sous un plan à deux phases.\nDonnées : NWTS.\nLivrables : fiche méthodologique + rapport d’arbitrage simulé de l’article."
+    "objectID": "travail-de-synthese.html#articles-suggérés",
+    "href": "travail-de-synthese.html#articles-suggérés",
+    "title": "Travail de synthèse",
+    "section": "Articles suggérés",
+    "text": "Articles suggérés\nUn autre article méthodologique peut être choisi avec l’accord de l’enseignant. Les PDF des articles suggérés sont déposés sur Brio.\n\n\n\n\n\n\n\n\nRéférence\nThème\nSéances liées\n\n\n\n\nAktas Samur, Coskunfirat et Saka (2014), PeerJ, 2, e648\nComparaison des GEE et des GLMM pour des réponses binaires longitudinales\n3, 6\n\n\nPedroza et Truong (2017), Trials, 18, 512\nRisques relatifs dans les études multicentriques avec peu de centres ; simulation\n2, 3, 6\n\n\nTalbot, Mésidor, Chiu, Simard et Sirois (2022), arXiv:2112.00547\nLa régression de Poisson robuste vue comme régression semi-paramétrique\n1, 6\n\n\nZivich, Ross, Shook-Sa, Cole et Edwards (2024), Statistics in Medicine, 43, 5562–5572\nVariance sandwich empirique pour la g-computation ICE\n6\n\n\nRistl, Hothorn, Ritz et Posch (2020), Statistical Methods in Medical Research, 29(6), 1746–1762\nInférence simultanée pour plusieurs modèles GEE marginaux\n6, 11\n\n\nJoo, Hormozdiari, Han et Eskin (2016), Genome Biology, 17, 62\nTests multiples dans les modèles linéaires mixtes (GWAS)\n3, 11\n\n\nFinak et coll. (2015), Genome Biology, 16, 278\nMAST : modèle en deux parties pour l’ARN de cellules uniques\n3, 11\n\n\nMiller, Roe, Hu et Bell (2020), BMC Medical Research Methodology, 20, 50\nPuissance du khi-deux et d’un GLMM avec données manquantes\n2, 3, 8\n\n\nSégalas, Helmer, Genuer et Proust-Lima (2024), Statistics in Medicine\nACP fonctionnelle et modèles mixtes avec données manquantes\n3–4, 8"
   },
   {
     "objectID": "devoirs.html",
     "href": "devoirs.html",
     "title": "Devoirs",
     "section": "",
-    "text": "STT-7360 — Méthodes biostatistiques\n\n\n\n\nDeux devoirs : modèles mixtes ; GEE et sandwich · 20 % de la note finale.\nRemettez votre rapport et votre code R dans la boîte de dépôt."
+    "text": "STT-7360 — Méthodes biostatistiques\n\n\n\n\nDeux devoirs individuels · 40 % de la note finale.\nChaque devoir se remet dans la boîte de dépôt de Brio : un rapport PDF et le code R, qui doit s’exécuter du début à la fin. Les énoncés complets et les grilles de correction sont dans les PDF."
   },
   {
-    "objectID": "devoirs.html#devoir-1-semaine-3",
-    "href": "devoirs.html#devoir-1-semaine-3",
+    "objectID": "devoirs.html#devoir-1-20-vendredi-26-février-2027-23-h-55",
+    "href": "devoirs.html#devoir-1-20-vendredi-26-février-2027-23-h-55",
     "title": "Devoirs",
-    "section": "Devoir 1 · semaine 3",
-    "text": "Devoir 1 · semaine 3\n\nExercice 1 · variance d’estimateurs par simulation (10 points)\nSoit \\(n\\) réalisations d’une variable aléatoire \\(Y\\) suivant une loi de Bernoulli de moyenne \\(\\theta\\). Pour estimer la variance de \\(\\hat\\theta = \\frac{1}{n}\\sum_{i=1}^n Y_i\\), on peut se servir de la formule de la variance d’une loi de Bernoulli dans laquelle on substitue \\(\\hat\\theta\\) à \\(\\theta\\) : \\[\\widehat{\\operatorname{var}}(\\hat\\theta) = \\frac{\\hat\\theta(1-\\hat\\theta)}{n},\\] ou de \\(v(\\hat\\theta) = s^2/n\\), où \\(s^2\\) est la variance échantillonnale \\[s^2 = \\frac{1}{n-1}\\sum_{i=1}^n (Y_i - \\bar Y)^2.\\]\n\nDérivez une formule pour la variance de \\(\\hat\\theta(1-\\hat\\theta)\\). Si vous utilisez la méthode delta, vous devrez recourir à la méthode delta d’ordre 2 à cause d’une particularité de la variance en \\(\\theta = 1/2\\).\nValidez l’estimateur de la variance de \\(\\hat\\theta(1-\\hat\\theta)\\) dérivé en a) et celui de la variance de \\(s^2\\), \\[v(s^2) = \\frac{\\hat\\mu_4 - \\frac{n-3}{n-1}\\,s^4}{n}, \\qquad \\hat\\mu_4 = \\frac{1}{n}\\sum_{i=1}^n (Y_i - \\bar Y)^4.\\] Pour ce faire, effectuez une étude de simulation en générant des échantillons de taille \\(n = 100\\), \\(1\\,000\\) et \\(10\\,000\\) de \\(Y\\) avec \\(\\theta = 0{,}2\\) et \\(0{,}5\\), et calculez \\(\\hat\\theta(1-\\hat\\theta)\\) et \\(s^2\\).\nComparez le taux de convergence des estimateurs \\(\\hat\\theta(1-\\hat\\theta)\\) et \\(s^2\\) en \\(\\theta = 0{,}2\\) et \\(0{,}5\\) en examinant l’évolution de leur variance empirique et de la moyenne de l’estimateur de leur variance analytique quand la taille d’échantillon augmente. Les formules de ces variances analytiques permettaient-elles de prédire les taux de convergence observés ? Commentez.\nComparez la performance des estimateurs \\(\\widehat{\\operatorname{var}}(\\hat\\theta)\\) et \\(v(\\hat\\theta)\\) à partir des résultats de votre étude de simulation.\n\n\n\nExercice 2 · modèle logistique mixte, données BSI (10 points)\nLes enfants de parents infectés par le VIH vivent des situations stressantes qui peuvent affecter leur développement et leur santé mentale. L’effet de la maladie du parent sur l’enfant peut être aggravé par divers facteurs, dont la consommation de drogues « dures » par le parent. Rotheram-Borus et coll. (2004) ont suivi pendant six ans un échantillon de parents infectés par le VIH résidant à New York et ayant un ou plusieurs adolescents (11 à 21 ans). Vous utiliserez les données de cette étude pour examiner l’effet de la consommation de drogues dures par le parent sur la santé mentale de ses adolescents.\nL’état mental des adolescents a été évalué par le Brief Symptom Inventory ou BSI (Derogatis et Melisaratos, 1983), un inventaire de 53 symptômes et états d’esprit négatifs couvrant un vaste ensemble de troubles psychologiques (dépression, anxiété, etc.). Chaque symptôme est codé sur une échelle de 0 à 4, et l’indice global de sévérité du BSI est la moyenne arithmétique des scores sur ces 53 items. Un score supérieur ou égal à 1 indique la présence d’un trouble psychologique.\nLe jeu de données contient les 215 parents pour lesquels la consommation de drogues dures est connue et leurs 323 enfants adolescents. Les visites de suivi étaient prévues tous les 3 mois pendant au plus 7 ans ; dans les faits, les intervalles entre visites sont souvent irréguliers. Certains parents sont décédés avant la fin du suivi : les données de leurs adolescents sont incluses seulement jusqu’au décès du parent. Le fichier bsi.csv contient les variables suivantes :\n\n\n\n\n\n\n\nVariable\nDescription\n\n\n\n\npid\nidentifiant numérique de l’adolescent\n\n\ntemps\ntemps écoulé depuis le début de l’étude, en mois\n\n\nparent\nidentifiant numérique du parent\n\n\ndroguedure\nstatut de consommation de drogues dures du parent dans les 3 derniers mois : \"nonconsommateur\", \"consommateur-courant\" ou \"consommateur-abst\" (consommateur qui s’est abstenu dans les 3 derniers mois)\n\n\ndbsi_gsi\nindicatrice d’un score BSI \\(\\ge 1\\) (1 = trouble psychologique, 0 = pas de trouble)\n\n\n\nAnalysez ces données à l’aide d’un modèle mixte généralisé pour une réponse dichotomique. Pour favoriser la convergence, adoptez le lien logit, lien canonique dans ce contexte. Bien que les enfants soient nichés dans leurs parents, la variabilité expliquée au niveau des parents est négligeable : utilisez des effets aléatoires seulement au niveau des enfants.\n\nPrésentez graphiquement et décrivez la forme de la relation entre la log-cote de trouble psychologique et le temps par lissage (régression semi-paramétrique). Incluez le statut de consommation de drogues dures comme effet fixe et l’identifiant de l’enfant comme effet aléatoire, mais pas d’interaction entre le statut de consommation et le temps, ni d’effet aléatoire pour le temps (non pris en charge par le module mgcv).\n\nPeu importe vos observations en a), adoptez ensuite un modèle de spline linéaire avec changement de pente à 18 mois, en définissant la variable\nbsi$apres18mois &lt;- pmax(0, bsi$temps - 18)\net en l’incluant dans le modèle logistique mixte. Les modèles suivants sont donc paramétriques. Vous rencontrerez probablement des problèmes de convergence pour certains modèles ; si vous n’arrivez pas à les résoudre, répondez en supposant que les estimations des paramètres sont correctes (elles sont généralement raisonnables malgré ces avertissements).\n\nSélectionnez les effets aléatoires du modèle. Incluez dans les modèles comparés des effets fixes pour le temps (y compris le changement de pente à 18 mois), le statut de consommation de drogues dures et leur interaction.\nRépondez ensuite aux questions suivantes sur les effets fixes. Y a-t-il une interaction entre la consommation de drogues dures par le parent et le temps ? Y a-t-il une différence entre les statuts de consommation ? Si oui, lesquels diffèrent ?\nÉcrivez le modèle retenu aux étapes b) et c) sous forme matricielle, \\(\\operatorname{logit}\\left(E[Y_i \\mid X_i]\\right) = X_i\\beta + Z_i\\mathbf{b}_i\\), où \\(i = 1, \\dots, 323\\) indice les enfants. Donnez en particulier les dimensions de \\(Y_i\\), \\(X_i\\) et \\(Z_i\\), et écrivez explicitement \\(\\mathbf{b}_i\\) et \\(\\beta\\). Quels sont les paramètres du modèle retenu ?\n\n\nRéférences\n\nDerogatis, L. R. et Melisaratos, N. (1983). The Brief Symptom Inventory: an introductory report. Psychological Medicine, 13(3), 595–605.\nRotheram-Borus, M. J., Lee, M. et coll. (2004). Six-year intervention outcomes for adolescent children of parents with the human immunodeficiency virus. Archives of Pediatrics & Adolescent Medicine, 158(8), 742–748."
+    "section": "Devoir 1 · 20 % · vendredi 26 février 2027, 23 h 55",
+    "text": "Devoir 1 · 20 % · vendredi 26 février 2027, 23 h 55\n📄 Consignes et grille du devoir 1 (PDF)\nMatière : séances 1 à 4 (rappels, simulation, modèles mixtes, modèles additifs). Rapport d’au plus 15 pages, annexes de code non comprises.\n\n\n\n\n\n\n\n\nQuestion\nContenu\nPoints\n\n\n\n\n1\nVariance de \\(\\hat\\theta(1-\\hat\\theta)\\) pour une loi de Bernoulli (méthode delta d’ordre 2) et validation par simulation\n45\n\n\n2\nModèle logistique mixte sur les données BSI : lissage du temps (GAMM), spline linéaire à 18 mois, sélection des effets aléatoires, tests des effets fixes, forme matricielle\n45\n\n\n—\nQualité du rapport (5) et du code (5)\n10\n\n\n\nDonnées : bsi.csv, déposé sur Brio."
   },
   {
-    "objectID": "devoirs.html#devoir-2-semaine-7",
-    "href": "devoirs.html#devoir-2-semaine-7",
+    "objectID": "devoirs.html#devoir-2-20-vendredi-23-avril-2027-23-h-55",
+    "href": "devoirs.html#devoir-2-20-vendredi-23-avril-2027-23-h-55",
     "title": "Devoirs",
-    "section": "Devoir 2 · semaine 7",
-    "text": "Devoir 2 · semaine 7\n\nGEE et modèle log-binomial marginal, pleuropneumonie\nCet exercice utilise le jeu de données de la pleuropneumonie contagieuse bovine (cbpp du module R lme4 ; Lesnoff et coll., 2004), où des échantillons sanguins ont été prélevés tous les 3 mois dans 15 troupeaux en Éthiopie. Au cours 3, un modèle log-binomial mixte a été ajusté à ces données pour estimer le rapport d’incidence entre périodes successives. Vous estimerez ici ces mêmes rapports d’incidence, avec un intervalle de confiance, sous un modèle log-binomial marginal ayant le troupeau comme grappe, à l’aide d’équations d’estimation généralisées.\nCe jeu de données comporte des valeurs manquantes pour certaines périodes chez certains troupeaux. On suppose que seule l’incidence est manquante et que la taille du troupeau est connue à toutes les périodes. Le fichier cbppw.csv contient les données en format large, avec la taille des troupeaux à toutes les périodes et les proportions d’incidence p.1 à p.4, pour vous aider à traiter les données manquantes.\n\nExpliquez pourquoi une analyse naïve portant uniquement sur les données observées pourrait produire des estimations biaisées.\nChoisissez une méthode de traitement des données manquantes et justifiez-la. Indiquez les postulats requis sur la nature des valeurs manquantes pour que votre analyse soit valide.\nPrésentez les rapports d’incidence et leurs intervalles de confiance sous un modèle log-binomial marginal ayant le troupeau comme grappe, estimé par GEE avec un traitement approprié des valeurs manquantes.\nComparez les estimations des coefficients et de leurs erreurs-types entre le modèle log-binomial marginal et le modèle log-binomial mixte avec effet aléatoire du troupeau du programme pleuropneumonie.R du cours 3. Que constatez-vous ?\n\n\n\n\n\n\n\nAstuceRemarques\n\n\n\n\nSi vous optez pour l’imputation multiple, modélisez les proportions p.1 à p.4 comme des variables continues : le module mice ne permet pas de modéliser des variables binomiales.\nSi vous optez pour la pondération par l’inverse de la probabilité de censure, notez qu’il n’y a pas de censure au temps 3 et que la probabilité de censure au temps 4 ne peut être obtenue que pour les troupeaux mesurés aux temps 2 et 3.\n\n\n\n\nRéférence\n\nLesnoff, M., Laval, G., Bonnet, P. et coll. (2004). Within-herd spread of contagious bovine pleuropneumonia in Ethiopian highlands. Preventive Veterinary Medicine, 64(1), 27–40."
-  },
-  {
-    "objectID": "plan-de-cours.html",
-    "href": "plan-de-cours.html",
-    "title": "Plan de cours",
-    "section": "",
-    "text": "STT-7360 — Méthodes biostatistiques\n\n\n\n\nSession d’hiver 2027 · cours orienté vers la formation à la recherche (maîtrise et doctorat).\n📄 Télécharger le plan de cours (PDF)"
-  },
-  {
-    "objectID": "plan-de-cours.html#en-bref",
-    "href": "plan-de-cours.html#en-bref",
-    "title": "Plan de cours",
-    "section": "En bref",
-    "text": "En bref\nLe cours couvre les rappels, les simulations, les données corrélées, la théorie semi-paramétrique, les données manquantes, l’erreur de mesure et l’échantillonnage à deux phases, les tests multiples, trois études de cas et des présentations d’articles. L’accent est mis sur l’exercice du métier de chercheur plutôt que sur la seule acquisition de méthodes : lire un article méthodologique de façon critique, en reproduire les résultats, évaluer une méthode par simulation, rédiger, arbitrer et présenter. Un mini-projet de recherche s’étend sur toute la session."
-  },
-  {
-    "objectID": "plan-de-cours.html#objectifs-de-formation",
-    "href": "plan-de-cours.html#objectifs-de-formation",
-    "title": "Plan de cours",
-    "section": "Objectifs de formation",
-    "text": "Objectifs de formation\nÀ la fin du cours, l’étudiante ou l’étudiant devrait pouvoir :\nO1. Lire un article méthodologique en biostatistique et en extraire la structure (problème, modèle, estimateur, hypothèses, propriétés, validation) à l’aide d’une fiche des caractéristiques méthodologiques.\nO2. Reproduire les résultats numériques d’un article (analyse de données et simulations) dans un flux de travail reproductible (R, Quarto/R Markdown, Git).\nO3. Concevoir une étude de simulation rigoureuse (cadre ADEMP : objectifs, mécanisme générateur, estimand, méthodes, mesures de performance) et en rapporter l’erreur Monte Carlo.\nO4. Mobiliser les outils théoriques transversaux (fonction d’influence, équations d’estimation, estimateurs sandwich, efficacité semi-paramétrique) pour comprendre pourquoi une méthode fonctionne et quand elle échoue.\nO5. Choisir et justifier une méthode pour des données corrélées, incomplètes, mesurées avec erreur ou soumises à de la multiplicité.\nO6. Communiquer : rédiger un court article, produire un rapport d’arbitrage et présenter oralement un travail de recherche."
-  },
-  {
-    "objectID": "plan-de-cours.html#principes-pédagogiques",
-    "href": "plan-de-cours.html#principes-pédagogiques",
-    "title": "Plan de cours",
-    "section": "Principes pédagogiques",
-    "text": "Principes pédagogiques\n\nUn fil conducteur : « de l’article à la méthode, de la méthode à la question ouverte ». Chaque bloc thématique se termine par une question de recherche plausible (limite d’une méthode, hypothèse non vérifiée, extension naturelle).\nLa simulation comme outil de recherche, introduite dès la 2e semaine et réutilisée dans toutes les études de cas et dans le projet.\nLa théorie comme langage commun. La fonction d’influence sert de pont entre la robustesse, les équations d’estimation généralisées (GEE), la pondération par l’inverse de la probabilité et les méthodes ciblées (TMLE).\nDeux parcours : un tronc commun, puis des lectures et exercices supplémentaires plus théoriques pour le doctorat (Tsiatis, van der Laan et Rose, Jiang et Nguyen).\nClasse active : lectures préalables, courte présentation magistrale, puis discussion d’article ou atelier de programmation."
-  },
-  {
-    "objectID": "plan-de-cours.html#évaluation",
-    "href": "plan-de-cours.html#évaluation",
-    "title": "Plan de cours",
-    "section": "Évaluation",
-    "text": "Évaluation\n\n\n\nÉlément\nPoids\nRemarques\n\n\n\n\nDevoirs (2)\n20 %\nModèles mixtes ; GEE et sandwich\n\n\nÉtudes de cas (3)\n25 %\nFiche + reproduction + question ouverte\n\n\nPrésentation d’article et rapport d’arbitrage\n15 %\nÉvaluation croisée en partie\n\n\nProjet de recherche\n40 %\nProposition 5 %, rapport d’étape 5 %, présentation 10 %, article 20 %\n\n\n\nLes dates de remise sont indiquées dans le calendrier.\n\nDifférenciation maîtrise / doctorat\nAu doctorat : exercices théoriques supplémentaires, article de projet plus long avec une composante théorique, et rôle d’arbitre principal lors des présentations."
-  },
-  {
-    "objectID": "plan-de-cours.html#compétences-de-recherche-transversales",
-    "href": "plan-de-cours.html#compétences-de-recherche-transversales",
-    "title": "Plan de cours",
-    "section": "Compétences de recherche transversales",
-    "text": "Compétences de recherche transversales\n\n\n\n\n\n\n\nCompétence\nOù elle est travaillée\n\n\n\n\nLecture critique\nFiches méthodologiques, études de cas, présentations\n\n\nReproductibilité\nAtelier de la semaine 1, reproductions, dépôt de code du projet\n\n\nSimulation\nSemaine 2, études de cas 2 et 3, projet\n\n\nThéorie\nSemaines 6, 7 et 11 ; exercices du doctorat\n\n\nRédaction scientifique\nProposition, rapport d’étape, article final\n\n\nArbitrage\nÉtude de cas 3, présentations d’articles\n\n\nCommunication orale\nPrésentations d’articles, colloque de fin de session"
-  },
-  {
-    "objectID": "plan-de-cours.html#références-principales",
-    "href": "plan-de-cours.html#références-principales",
-    "title": "Plan de cours",
-    "section": "Références principales",
-    "text": "Références principales\n\nDudoit, S. et van der Laan, M. J. (2008). Multiple Testing Procedures with Applications to Genomics. Springer.\nFitzmaurice, G. M., Laird, N. M. et Ware, J. H. (2011). Applied Longitudinal Analysis, 2e éd. Wiley.\nJiang, J. et Nguyen, T. (2021). Linear and Generalized Linear Mixed Models and Their Applications, 2e éd. Springer.\nMorris, T. P., White, I. R. et Crowther, M. J. (2019). Using simulation studies to evaluate statistical methods. Statistics in Medicine, 38, 2074–2102.\nTsiatis, A. A. (2006). Semiparametric Theory and Missing Data. Springer.\nvan der Laan, M. J. et Rose, S. (2011). Targeted Learning. Springer.\nWu, L. (2010). Mixed Effects Models for Complex Data. Chapman & Hall/CRC.\nArticles des études de cas : Neuhaus et McCulloch (2006, JRSS B) ; Tuglus et van der Laan (2011) ; Breslow et Chatterjee (1999, JRSS C)."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "STT-7360",
-    "section": "",
-    "text": "STT-7360\n\n\nMéthodes biostatistiques · Hiver 2027\n\n\nUn cours de formation à la recherche pour la maîtrise et le doctorat : données corrélées, théorie semi-paramétrique, données manquantes, erreur de mesure et tests multiples, abordés en lisant, en reproduisant et en étendant des articles méthodologiques.\n\n\nPlan de cours Calendrier Projet de recherche"
+    "section": "Devoir 2 · 20 % · vendredi 23 avril 2027, 23 h 55",
+    "text": "Devoir 2 · 20 % · vendredi 23 avril 2027, 23 h 55\n📄 Consignes et grille du devoir 2 (PDF)\nMatière : séances 6 à 11 (GEE, données manquantes, tests multiples). Rapport d’au plus 12 pages, annexes de code non comprises.\n\n\n\n\n\n\n\n\nQuestion\nContenu\nPoints\n\n\n\n\n1\nPleuropneumonie bovine : modèle log-binomial marginal par GEE avec traitement des données manquantes (imputation multiple ou IPCW), comparaison au modèle mixte\n50\n\n\n2\nTests multiples sur les données golub : statistiques de Welch, contrôle du FWER et du FDR, graphique et tableau à un FDR de 5 %\n40\n\n\n—\nQualité du rapport (5) et du code (5)\n10\n\n\n\nDonnées : cbppw.csv ; jeu de données golub du module multtest (Bioconductor)."
   },
   {
     "objectID": "calendrier.html",
     "href": "calendrier.html",
     "title": "Calendrier",
     "section": "",
-    "text": "STT-7360 — Méthodes biostatistiques\n\n\nCalendrier\n\nHiver 2027 · 15 semaines, semaine de lecture en semaine 9.\n\n\n\n\n\n\n\n\n\nAvertissementLa version Brio fait foi\n\n\n\nCe calendrier est fourni à titre indicatif. La version officielle est celle déposée sur Brio : en cas de doute ou de différence entre les deux, c’est l’information sur Brio qui prévaut.\n\n\nM = tronc commun (maîtrise et doctorat), D = complément doctorat.\n\n\n\n\n\n\n\n\n\nSem.\nThème\nContenu et activités\nVolet recherche / livrable\n\n\n\n\n1\nIntroduction et rappels\nVraisemblance, modèles linéaires généralisés, inférence asymptotique (notes Rappel). Présentation du projet de session.\nAtelier : flux de travail reproductible (Git, Quarto, renv).\n\n\n2\nSimulations\nPrincipes, générateurs, cadre ADEMP, mesures de performance (biais, EQM, couverture), erreur Monte Carlo, parallélisation.\nExercice : critiquer la section « simulations » d’un article publié.\n\n\n3\nDonnées corrélées complexes (I)\nModèles mixtes linéaires et généralisés ; effet conditionnel vs marginal (Wu, ch. 2 ; Fitzmaurice et coll.). D : GAM mixtes, Jiang et Nguyen 3.5.2.\nDevoir 1 (modèles mixtes, données BSI).\n\n\n4\nDonnées corrélées complexes (II)\nGEE, estimateur sandwich, comparaison GEE/GLMM (articles Zhang et coll.).\nChoix des articles à présenter.\n\n\n5\nÉtude de cas 1\nNeuhaus et McCulloch (2006) : corrélation entre effets aléatoires et covariables ; régression logistique conditionnelle (données naisga).\nFiche méthodologique + reproduction d’un tableau de l’article.\n\n\n6\nThéorie semi-paramétrique (I)\nFonction d’influence, M-estimateurs, robustesse (Wu, ch. 9 ; Tsiatis, ch. 3). Application : modèle mixte robuste (SleepStudyRobuste.R).\nProposition de projet (2 pages).\n\n\n7\nThéorie semi-paramétrique (II)\nÉquations d’estimation, GEE vues comme M-estimation, efficacité. D : Tsiatis, ch. 4 ; van der Laan et Rose, ch. 5.\nDevoir 2 (GEE, pleuropneumonie).\n\n\n8\nÉtude de cas 2\nMéthodes ciblées pour variables continues (Tuglus et van der Laan) ; TMLE, découverte de biomarqueurs.\nFiche méthodologique + petite simulation comparant TMLE et régression.\n\n\n9\n\nSEMAINE DE LECTURE — rencontres individuelles sur les projets\n\n\n\n10\nDonnées manquantes (I)\nMécanismes MCAR/MAR/MNAR, imputation multiple (Wu, sect. 3.2–3.5).\nExercice d’imputation (données dentaires).\n\n\n11\nDonnées manquantes (II)\nPondération par l’inverse de la probabilité (IPW), estimateurs doublement robustes ; lien avec la fonction d’influence (Wu 10.3.1).\nRapport d’étape du projet (résultats préliminaires).\n\n\n12\nÉtude de cas 3\nErreur de mesure et échantillonnage à deux phases (Breslow et Chatterjee, 1999 ; données NWTS). Comparaison d’estimateurs.\nFiche méthodologique + rapport d’arbitrage simulé de l’article.\n\n\n13\nTests multiples\nFWER, FDR, procédures pas-à-pas, rééchantillonnage (Farcomeni ; Dudoit et van der Laan, données ApoAI).\nRésolution de problèmes en équipe.\n\n\n14\nPrésentations d’articles\nPrésentations de 20 min + 10 min de discussion animée par un « arbitre » désigné.\nRapport d’arbitrage écrit (1–2 pages).\n\n\n15\nColloque de fin de session\nPrésentations des projets (format congrès : 12 min + questions).\nArticle final (remis une semaine plus tard)."
+    "text": "STT-7360 — Méthodes biostatistiques\n\n\nCalendrier\n\nHiver 2027 · 13 vendredis de cours, 8 h 30 à 11 h 20.\n\n\n\n\n\n\n\n\n\nAvertissementLa version Brio fait foi\n\n\n\nCe calendrier est fourni à titre indicatif. La version officielle est celle déposée sur Brio : en cas de doute ou de différence entre les deux, c’est l’information sur Brio qui prévaut.\n\n\n\n\n\nSem.\nDate\nThème\nDocuments\nÉchéances\n\n\n\n\n1\n15 janv.\nIntroduction et rappels d’inférence asymptotique, estimateurs M\nPlan de cours · Notes 1\n\n\n\n2\n22 janv.\nÉtudes de simulation\nNotes 2 · Devoir 1\n\n\n\n3\n29 janv.\nModèles linéaires mixtes et modèles linéaires mixtes généralisés\nNotes 3\n\n\n\n4\n5 févr.\nModèles additifs généralisés (mixtes)\nNotes 4\n\n\n\n5\n12 févr.\nÉtude de cas 1 : effets intra et inter-grappes\nNotes 5 · Consignes\n\n\n\n6\n19 févr.\nGEE, fonction d’influence et robustesse ; D : théorie semi-paramétrique\nNotes 6\nChoix de l’article\n\n\n7\n26 févr.\nÉtude de cas 2 : estimation ciblée de l’effet d’un biomarqueur\nNotes 7 · Consignes\nDevoir 1\n\n\n8\n5 mars\nSEMAINE DE LECTURE\n\n\n\n\n9\n12 mars\nDonnées manquantes I : mécanismes, vraisemblance, imputation multiple\nNotes 8\n\n\n\n10\n19 mars\nDonnées manquantes II : pondération par probabilité inverse, GEE pondérées\nNotes 9 · Devoir 2\n\n\n\n11\n26 mars\nVENDREDI SAINT : PAS DE COURS\n\n\n\n\n12\n2 avril\nÉtude de cas 3 : échantillonnage à deux phases et erreur de mesure\nNotes 10 · Consignes\n\n\n\n13\n9 avril\nTests multiples\nNotes 11\n\n\n\n14\n16 avril\nPrésentations des travaux de synthèse (1)\nConsignes\n\n\n\n15\n23 avril\nPrésentations des travaux de synthèse (2)\nConsignes\nDevoir 2\n\n\n16\n26 avril au 2 mai\nPériode d’examens\n\nExamen final (date à confirmer)\n\n\n\nD = complément pour le doctorat. Les devoirs sont à remettre à 23 h 55 le jour indiqué ; le code du travail de synthèse est déposé la veille de la présentation, à 23 h 55."
   },
   {
-    "objectID": "projet.html",
-    "href": "projet.html",
-    "title": "Projet de recherche",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STT-7360",
     "section": "",
-    "text": "STT-7360 — Méthodes biostatistiques\n\n\n\n\nLe fil rouge de la session · 40 % de la note finale."
+    "text": "STT-7360\n\n\nMéthodes biostatistiques · Hiver 2027\n\n\nUn cours de maîtrise et de doctorat sur l’estimation et l’inférence pour des données biomédicales complexes : données corrélées, fonction d’influence et robustesse, théorie semi-paramétrique, données manquantes, échantillonnage à deux phases et tests multiples. Chaque méthode est analysée avec la même grille méthodologique et mise en œuvre en R.\n\n\nPlan de cours Calendrier Notes de cours"
   },
   {
-    "objectID": "projet.html#jalons",
-    "href": "projet.html#jalons",
-    "title": "Projet de recherche",
-    "section": "Jalons",
-    "text": "Jalons\n\n\n\n\n\n\n\n\n\nSemaine\nLivrable\nContenu attendu\nPoids\n\n\n\n\n6\nProposition\nQuestion, article de départ, estimand, plan de simulation ADEMP (2 pages)\n5 %\n\n\n9\nRencontre\nValidation du plan et du code de reproduction\n—\n\n\n11\nRapport d’étape\nReproduction réussie ou écarts expliqués\n5 %\n\n\n15\nPrésentation\nFormat congrès : 12 min + questions\n10 %\n\n\n16\nArticle\n8–12 pages (maîtrise) ou 12–20 pages (doctorat), code public\n20 %\n\n\n\nAu doctorat, l’article comporte une composante théorique."
+    "objectID": "plan-de-cours.html",
+    "href": "plan-de-cours.html",
+    "title": "Plan de cours",
+    "section": "",
+    "text": "STT-7360 — Méthodes biostatistiques\n\n\n\n\nHiver 2027 · vendredi, 8 h 30 à 11 h 20 · maîtrise et doctorat.\n📄 Télécharger le plan de cours (PDF)"
   },
   {
-    "objectID": "projet.html#exemples-dextensions",
-    "href": "projet.html#exemples-dextensions",
-    "title": "Projet de recherche",
-    "section": "Exemples d’extensions",
-    "text": "Exemples d’extensions\n\nÉvaluer la sensibilité d’un estimateur à une violation d’hypothèse (mauvaise spécification des effets aléatoires, MNAR, contamination par des valeurs aberrantes).\nComparer la méthode de l’article à une alternative robuste ou doublement robuste.\nDériver la fonction d’influence d’un estimateur et en tirer une variance sandwich, puis vérifier la couverture par simulation (D).\nAdapter la méthode à un autre type de réponse (binaire, ordinale, de comptage)."
+    "objectID": "plan-de-cours.html#description",
+    "href": "plan-de-cours.html#description",
+    "title": "Plan de cours",
+    "section": "Description",
+    "text": "Description\nCe cours présente des méthodes statistiques avancées pour l’analyse de données biomédicales complexes : données corrélées (longitudinales ou groupées), modèles comportant des paramètres de nuisance de grande dimension, données manquantes ou incomplètes par devis, et problèmes de tests multiples. L’accent porte sur la compréhension des méthodes d’estimation et d’inférence, sur leur justification théorique et sur leur mise en œuvre en R. Le cours apprend aussi à lire un article méthodologique, à en extraire les choix statistiques et à reproduire ses analyses.\nLe cours s’adresse aux étudiantes et étudiants de maîtrise et de doctorat en statistique et en biostatistique. Un contenu supplémentaire, signalé dans les notes par un encadré « Niveau doctorat », porte sur la théorie de l’estimation semi-paramétrique ; il fait l’objet d’exercices et d’une question d’examen réservés au 3e cycle."
   },
   {
-    "objectID": "projet.html#pistes-darticles",
-    "href": "projet.html#pistes-darticles",
-    "title": "Projet de recherche",
-    "section": "Pistes d’articles",
-    "text": "Pistes d’articles\n\nEstimateur sandwich empirique pour la g-computation par espérances conditionnelles itérées (Talbot et coll.).\nACP fonctionnelle comme alternative aux modèles mixtes (Ségalas et coll., 2024).\nModèles longitudinaux binomiaux et de comptage, GEE vs GLMM (Zhang et coll.).\nModèles mixtes avec erreur de mesure et M-estimateurs pour modèles mixtes (Wu, sect. 5.1–5.2 et 9.4)."
+    "objectID": "plan-de-cours.html#fil-conducteur-la-grille-méthodologique",
+    "href": "plan-de-cours.html#fil-conducteur-la-grille-méthodologique",
+    "title": "Plan de cours",
+    "section": "Fil conducteur : la grille méthodologique",
+    "text": "Fil conducteur : la grille méthodologique\nChaque méthode vue en classe et chaque article étudié sont analysés selon la même grille, qui structure aussi les études de cas, le travail de synthèse et l’examen final :\n\nl’objet statistique d’intérêt ;\nles paramètres nuisibles, les données manquantes et les sources de biais ;\nl’approche retenue pour traiter la nuisance ou éviter le biais ;\nle critère d’estimation ou de test ;\nla méthode d’optimisation ou de calcul ;\nl’obtention de la distribution des statistiques (inférence)."
   },
   {
-    "objectID": "projet.html#simulation-le-cadre-ademp",
-    "href": "projet.html#simulation-le-cadre-ademp",
-    "title": "Projet de recherche",
-    "section": "Simulation : le cadre ADEMP",
-    "text": "Simulation : le cadre ADEMP\nLe plan de simulation de la proposition suit le cadre ADEMP de Morris, White et Crowther (2019) :\n\n\n\n\n\n\n\n\nLettre\nÉlément\nÀ préciser\n\n\n\n\nA\nAims : objectifs\nQuelle question la simulation doit-elle trancher ?\n\n\nD\nData-generating mechanism : mécanisme générateur\nModèle, paramètres, tailles d’échantillon, scénarios\n\n\nE\nEstimand\nLa quantité visée\n\n\nM\nMethods : méthodes\nLes estimateurs comparés\n\n\nP\nPerformance measures : mesures de performance\nBiais, EQM, couverture, avec leur erreur Monte Carlo"
+    "objectID": "plan-de-cours.html#objectifs-dapprentissage",
+    "href": "plan-de-cours.html#objectifs-dapprentissage",
+    "title": "Plan de cours",
+    "section": "Objectifs d’apprentissage",
+    "text": "Objectifs d’apprentissage\nÀ la fin du cours, l’étudiante ou l’étudiant sera en mesure de :\n\nutiliser les outils asymptotiques (convergence, théorème de Slutsky, méthode delta, estimateurs M) pour obtenir la loi d’un estimateur ;\nconcevoir une étude de simulation qui valide un estimateur, l’estimateur de sa variance, un intervalle de confiance ou un test ;\nformuler, estimer et interpréter un modèle linéaire mixte généralisé ou un modèle additif généralisé (mixte), et choisir la méthode d’approximation de la vraisemblance ;\ndistinguer les effets individuels des effets marginaux et choisir entre un modèle mixte et des équations d’estimation généralisées ;\ndériver une fonction d’influence, en tirer un estimateur robuste de la variance et construire un estimateur robuste aux valeurs extrêmes ;\n(doctorat) situer les équations d’estimation généralisées et l’estimation ciblée dans la théorie semi-paramétrique ;\nreconnaître un mécanisme de données manquantes et appliquer la vraisemblance des données observées, l’imputation multiple ou la pondération par probabilité inverse ;\ncontrôler l’erreur de première espèce d’une famille de tests (FWER, FDR) ;\nprésenter un article méthodologique et implanter la méthode qu’il décrit."
+  },
+  {
+    "objectID": "plan-de-cours.html#formule-pédagogique",
+    "href": "plan-de-cours.html#formule-pédagogique",
+    "title": "Plan de cours",
+    "section": "Formule pédagogique",
+    "text": "Formule pédagogique\nChaque séance de trois heures combine un exposé théorique appuyé sur des notes de cours détaillées et des exemples traités en R. Les séances d’étude de cas portent sur un article : on le lit à l’avance, on remplit la fiche des caractéristiques méthodologiques et on prépare les exercices proposés, qui sont corrigés en classe. Les études de cas ne sont pas évaluées, mais leur préparation est essentielle à la réussite du travail de synthèse et de l’examen final."
+  },
+  {
+    "objectID": "plan-de-cours.html#évaluation",
+    "href": "plan-de-cours.html#évaluation",
+    "title": "Plan de cours",
+    "section": "Évaluation",
+    "text": "Évaluation\n\n\n\nÉvaluation\nPoids\nÉchéance\n\n\n\n\nDevoir 1\n20 %\nvendredi 26 février 2027, 23 h 55\n\n\nDevoir 2\n20 %\nvendredi 23 avril 2027, 23 h 55\n\n\nTravail de synthèse et présentation orale\n30 %\nprésentation le 16 ou le 23 avril 2027\n\n\nExamen final\n30 %\npériode d’examens (26 avril au 2 mai 2027)\n\n\n\nL’examen final est un examen de résolution de problèmes de 2 h 50, sans ordinateur. Le barème diffère entre la maîtrise et le doctorat, et une question est réservée au doctorat."
+  },
+  {
+    "objectID": "plan-de-cours.html#préalables",
+    "href": "plan-de-cours.html#préalables",
+    "title": "Plan de cours",
+    "section": "Préalables",
+    "text": "Préalables\nInférence statistique de niveau avancé (maximum de vraisemblance, tests de Wald, du rapport de vraisemblances et du score), modèles linéaires généralisés, notions de modèle linéaire mixte et programmation en R."
+  },
+  {
+    "objectID": "plan-de-cours.html#références-principales",
+    "href": "plan-de-cours.html#références-principales",
+    "title": "Plan de cours",
+    "section": "Références principales",
+    "text": "Références principales\n\nWu, L. (2010). Mixed Effects Models for Complex Data. Chapman & Hall/CRC (manuel principal).\nBreslow, N. E. et Chatterjee, N. (1999). Design and analysis of two-phase studies with binary outcome applied to Wilms tumour prognosis. Applied Statistics, 48(4), 457–468.\nDudoit, S. et van der Laan, M. J. (2008). Multiple Testing Procedures with Applications to Genomics. Springer.\nFarcomeni, A. (2010). Multiple testing procedures. Ch. 3 de Medical Biostatistics for Complex Diseases. Wiley.\nFitzmaurice, G., Laird, N. et Ware, J. (2011). Applied Longitudinal Analysis, 2e éd. Wiley.\nJiang, J. et Nguyen, T. (2021). Linear and Generalized Linear Mixed Models and Their Applications, 2e éd. Springer.\nNeuhaus, J. M. et McCulloch, C. E. (2006). Separating between- and within-cluster covariate effects by using conditional and partitioning methods. JRSS B, 68(5), 859–872.\nTsiatis, A. A. (2006). Semiparametric Theory and Missing Data. Springer.\nvan der Laan, M. J. et Rose, S. (2011). Targeted Learning. Springer.\nWood, S. N. (2017). Generalized Additive Models: An Introduction with R, 2e éd. Chapman & Hall/CRC.\n\nLogiciel : R, avec notamment lme4, mgcv, gee, geepack, mice, survival, osDesign et multtest (Bioconductor)."
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "Notes de cours",
+    "section": "",
+    "text": "STT-7360 — Méthodes biostatistiques\n\n\nNotes de cours\n\nUne note complète par séance, à lire avant le cours et à suivre en classe.\n\n\n\nChaque note contient les objectifs de la séance, la théorie avec les démonstrations des résultats clés, des exemples traités en R, des encadrés « À retenir », « Grille méthodologique » et « Niveau doctorat », puis des exercices. Les sorties R qu’on y trouve proviennent d’exécutions réelles du code présenté.\n\n\n\nSéance\nDate\nNotes\nPages\n\n\n\n\n1\n15 janv.\nRappels d’inférence asymptotique et estimateurs M\n20\n\n\n2\n22 janv.\nÉtudes de simulation\n17\n\n\n3\n29 janv.\nModèles linéaires mixtes et modèles linéaires mixtes généralisés\n22\n\n\n4\n5 févr.\nModèles additifs généralisés (mixtes)\n19\n\n\n5\n12 févr.\nÉtude de cas 1 : effets intra et inter-grappes\n15\n\n\n6\n19 févr.\nÉquations d’estimation généralisées, fonction d’influence et robustesse\n26\n\n\n7\n26 févr.\nÉtude de cas 2 : estimation ciblée de l’effet d’un biomarqueur\n17\n\n\n8\n12 mars\nDonnées manquantes I : mécanismes, vraisemblance et imputation multiple\n20\n\n\n9\n19 mars\nDonnées manquantes II : pondération par probabilité inverse et GEE pondérées\n17\n\n\n10\n2 avril\nÉtude de cas 3 : échantillonnage à deux phases et erreur de mesure\n17\n\n\n11\n9 avril\nTests multiples\n22\n\n\n\nCode R complet des exemples : section 8 · section 9 · section 11.\nCes notes ont été rédigées à partir du matériel de Lajmi Lakhal-Chaieb et d’Alexandre Bureau. Le manuel de référence est Wu, L. (2010), Mixed Effects Models for Complex Data."
+  },
+  {
+    "objectID": "etudes-de-cas.html",
+    "href": "etudes-de-cas.html",
+    "title": "Études de cas",
+    "section": "",
+    "text": "STT-7360 — Méthodes biostatistiques\n\n\n\n\nTrois articles, trois séances · non évaluées, mais essentielles pour le travail de synthèse et l’examen."
+  },
+  {
+    "objectID": "etudes-de-cas.html#format",
+    "href": "etudes-de-cas.html#format",
+    "title": "Études de cas",
+    "section": "Format",
+    "text": "Format\nAvant chaque séance d’étude de cas :\n\nlire l’article ;\nremplir la fiche des caractéristiques méthodologiques (objet d’intérêt, nuisance et biais, approche, critère, calcul, inférence) ;\npréparer les exercices du document de consignes, dont la reproduction de résultats de l’article en R.\n\nLa séance alterne la discussion de la fiche, la théorie des notes et la correction des exercices. Chaque document de consignes contient la fiche vierge et une grille d’autoévaluation. Les articles et les données sont déposés sur Brio."
+  },
+  {
+    "objectID": "etudes-de-cas.html#étude-de-cas-1-12-février",
+    "href": "etudes-de-cas.html#étude-de-cas-1-12-février",
+    "title": "Études de cas",
+    "section": "Étude de cas 1 · 12 février",
+    "text": "Étude de cas 1 · 12 février\nEffets intra et inter-grappes. Neuhaus, J. M. et McCulloch, C. E. (2006). Separating between- and within-cluster covariate effects by using conditional and partitioning methods. JRSS B, 68(5), 859–872.\nCorrélation entre effets aléatoires et covariables, décomposition intra/inter, régression logistique conditionnelle. Données : naisga.csv.\nConsignes (PDF) · Notes de la séance (PDF)"
+  },
+  {
+    "objectID": "etudes-de-cas.html#étude-de-cas-2-26-février",
+    "href": "etudes-de-cas.html#étude-de-cas-2-26-février",
+    "title": "Études de cas",
+    "section": "Étude de cas 2 · 26 février",
+    "text": "Étude de cas 2 · 26 février\nEstimation ciblée de l’effet d’un biomarqueur. Tuglus, C. et van der Laan, M. J. (2011). Targeted methods for biomarker discovery. Ch. 22 de van der Laan et Rose, Targeted Learning. Springer.\nParamètre d’importance d’une variable, TMLE, inférence par la courbe d’influence. Données : golub (module multtest) et genes_select.RDS.\nConsignes (PDF) · Notes de la séance (PDF)"
+  },
+  {
+    "objectID": "etudes-de-cas.html#étude-de-cas-3-2-avril",
+    "href": "etudes-de-cas.html#étude-de-cas-3-2-avril",
+    "title": "Études de cas",
+    "section": "Étude de cas 3 · 2 avril",
+    "text": "Étude de cas 3 · 2 avril\nÉchantillonnage à deux phases et erreur de mesure. Breslow, N. E. et Chatterjee, N. (1999). Design and analysis of two-phase studies with binary outcome applied to Wilms tumour prognosis. Applied Statistics, 48(4), 457–468.\nVraisemblance pondérée, pseudo-vraisemblance et maximum de vraisemblance semi-paramétrique. Données : fichiers NWTS (cohorte, cas-témoins, échantillon équilibré).\nConsignes (PDF) · Notes de la séance (PDF)"
   }
 ]

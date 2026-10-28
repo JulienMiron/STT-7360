@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d879eba7f9f7abf158eeecada124be5f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f28db2f28e40bd2319d0714e6e487a7d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,16 +108,20 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Calendrier</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./notes.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./devoirs.html"> 
 <span class="menu-text">Devoirs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projet.html"> 
-<span class="menu-text">Projet de recherche</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./etudes-de-cas.html" aria-current="page"> 
 <span class="menu-text">Études de cas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./travail-de-synthese.html"> 
+<span class="menu-text">Synthèse</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -148,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Dernière modification</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">14 octobre 2026</p>
+      <p class="date-modified">28 octobre 2026</p>
     </div>
   </div>
     
@@ -166,46 +170,37 @@ STT-7360 — Méthodes biostatistiques
 <section id="études-de-cas" class="level1">
 <h1>Études de cas</h1>
 <p class="hero-lead">
-Trois articles, trois livrables courts chacun · 25 % de la note finale.
+Trois articles, trois séances · non évaluées, mais essentielles pour le travail de synthèse et l’examen.
 </p>
 </section>
 </div>
 <section id="format" class="level2">
 <h2 class="anchored" data-anchor-id="format">Format</h2>
-<p>Chaque étude de cas produit trois éléments courts :</p>
+<p>Avant chaque séance d’étude de cas :</p>
 <ol type="1">
-<li>la <strong>fiche des caractéristiques méthodologiques</strong> : problème, modèle, estimateur, hypothèses, propriétés, validation ;</li>
-<li>une <strong>reproduction</strong> d’un tableau ou d’une figure de l’article à partir des données fournies ;</li>
-<li>une <strong>question ouverte</strong> : une limite de l’article et une façon de l’étudier.</li>
+<li>lire l’article ;</li>
+<li>remplir la <strong>fiche des caractéristiques méthodologiques</strong> (objet d’intérêt, nuisance et biais, approche, critère, calcul, inférence) ;</li>
+<li>préparer les exercices du document de consignes, dont la reproduction de résultats de l’article en R.</li>
 </ol>
-<p>L’étude de cas 3 prend la forme d’un rapport d’arbitrage, afin d’exercer cette compétence avant les présentations d’articles.</p>
+<p>La séance alterne la discussion de la fiche, la théorie des notes et la correction des exercices. Chaque document de consignes contient la fiche vierge et une grille d’autoévaluation. Les articles et les données sont déposés sur Brio.</p>
 </section>
-<section id="étude-de-cas-1-semaine-5" class="level2">
-<h2 class="anchored" data-anchor-id="étude-de-cas-1-semaine-5">Étude de cas 1 · semaine 5</h2>
-<p><strong>Corrélation entre effets aléatoires et covariables.</strong> Neuhaus, J. M. et McCulloch, C. E. (2006), <em>Journal of the Royal Statistical Society, Series B</em>.</p>
-<ul>
-<li>Thème : régression logistique conditionnelle.</li>
-<li>Données : <code>naisga.csv</code>.</li>
-<li>Livrables : fiche méthodologique + reproduction d’un tableau de l’article.</li>
-</ul>
+<section id="étude-de-cas-1-12-février" class="level2">
+<h2 class="anchored" data-anchor-id="étude-de-cas-1-12-février">Étude de cas 1 · 12 février</h2>
+<p><strong>Effets intra et inter-grappes.</strong> Neuhaus, J. M. et McCulloch, C. E. (2006). Separating between- and within-cluster covariate effects by using conditional and partitioning methods. <em>JRSS B</em>, 68(5), 859–872.</p>
+<p>Corrélation entre effets aléatoires et covariables, décomposition intra/inter, régression logistique conditionnelle. Données : <code>naisga.csv</code>.</p>
+<p><a href="consignes/etude_de_cas_1.pdf">Consignes (PDF)</a> · <a href="notes/05_etude_de_cas_1.pdf">Notes de la séance (PDF)</a></p>
 </section>
-<section id="étude-de-cas-2-semaine-8" class="level2">
-<h2 class="anchored" data-anchor-id="étude-de-cas-2-semaine-8">Étude de cas 2 · semaine 8</h2>
-<p><strong>Méthodes ciblées pour variables continues.</strong> Tuglus, C. et van der Laan, M. J. (2011).</p>
-<ul>
-<li>Thème : TMLE et découverte de biomarqueurs.</li>
-<li>Données : <code>genes_select</code>.</li>
-<li>Livrables : fiche méthodologique + petite simulation comparant TMLE et régression.</li>
-</ul>
+<section id="étude-de-cas-2-26-février" class="level2">
+<h2 class="anchored" data-anchor-id="étude-de-cas-2-26-février">Étude de cas 2 · 26 février</h2>
+<p><strong>Estimation ciblée de l’effet d’un biomarqueur.</strong> Tuglus, C. et van der Laan, M. J. (2011). Targeted methods for biomarker discovery. Ch. 22 de van der Laan et Rose, <em>Targeted Learning</em>. Springer.</p>
+<p>Paramètre d’importance d’une variable, TMLE, inférence par la courbe d’influence. Données : <code>golub</code> (module <code>multtest</code>) et <code>genes_select.RDS</code>.</p>
+<p><a href="consignes/etude_de_cas_2.pdf">Consignes (PDF)</a> · <a href="notes/07_etude_de_cas_2.pdf">Notes de la séance (PDF)</a></p>
 </section>
-<section id="étude-de-cas-3-semaine-12" class="level2">
-<h2 class="anchored" data-anchor-id="étude-de-cas-3-semaine-12">Étude de cas 3 · semaine 12</h2>
-<p><strong>Erreur de mesure et échantillonnage à deux phases.</strong> Breslow, N. E. et Chatterjee, N. (1999), <em>Journal of the Royal Statistical Society, Series C</em>.</p>
-<ul>
-<li>Thème : comparaison d’estimateurs sous un plan à deux phases.</li>
-<li>Données : NWTS.</li>
-<li>Livrables : fiche méthodologique + rapport d’arbitrage simulé de l’article.</li>
-</ul>
+<section id="étude-de-cas-3-2-avril" class="level2">
+<h2 class="anchored" data-anchor-id="étude-de-cas-3-2-avril">Étude de cas 3 · 2 avril</h2>
+<p><strong>Échantillonnage à deux phases et erreur de mesure.</strong> Breslow, N. E. et Chatterjee, N. (1999). Design and analysis of two-phase studies with binary outcome applied to Wilms tumour prognosis. <em>Applied Statistics</em>, 48(4), 457–468.</p>
+<p>Vraisemblance pondérée, pseudo-vraisemblance et maximum de vraisemblance semi-paramétrique. Données : fichiers NWTS (cohorte, cas-témoins, échantillon équilibré).</p>
+<p><a href="consignes/etude_de_cas_3.pdf">Consignes (PDF)</a> · <a href="notes/10_etude_de_cas_3.pdf">Notes de la séance (PDF)</a></p>
 
 
 </section>

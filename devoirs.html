@@ -26,41 +26,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -80,7 +45,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d879eba7f9f7abf158eeecada124be5f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f28db2f28e40bd2319d0714e6e487a7d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -172,16 +137,20 @@ window.Quarto = {
 <span class="menu-text">Calendrier</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./notes.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="./devoirs.html" aria-current="page"> 
 <span class="menu-text">Devoirs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projet.html"> 
-<span class="menu-text">Projet de recherche</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./etudes-de-cas.html"> 
 <span class="menu-text">Études de cas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./travail-de-synthese.html"> 
+<span class="menu-text">Synthèse</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -212,7 +181,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Dernière modification</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">14 octobre 2026</p>
+      <p class="date-modified">28 octobre 2026</p>
     </div>
   </div>
     
@@ -230,7 +199,7 @@ STT-7360 — Méthodes biostatistiques
 <section id="devoirs" class="level1">
 <h1>Devoirs</h1>
 <p class="hero-lead">
-Deux devoirs : modèles mixtes ; GEE et sandwich · 20 % de la note finale.
+Deux devoirs individuels · 40 % de la note finale.
 </p>
 </section>
 </div>
@@ -244,119 +213,85 @@ Deux devoirs : modèles mixtes ; GEE et sandwich · 20 % de la note finale.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Les énoncés ci-dessous sont fournis à titre indicatif. La version officielle, avec la date de remise, est celle déposée sur <strong>Brio</strong> : en cas de doute ou de différence entre les deux, c’est l’information sur <strong>Brio</strong> qui prévaut.</p>
+<p>Les consignes ci-dessous sont fournies à titre indicatif. La version officielle, avec la date de remise, est celle déposée sur <strong>Brio</strong> : en cas de doute ou de différence entre les deux, c’est l’information sur <strong>Brio</strong> qui prévaut.</p>
 </div>
 </div>
-<p>Remettez votre rapport et votre code R dans la boîte de dépôt.</p>
-<section id="devoir-1-semaine-3" class="level2">
-<h2 class="anchored" data-anchor-id="devoir-1-semaine-3">Devoir 1 · semaine 3</h2>
-<section id="exercice-1-variance-destimateurs-par-simulation-10-points" class="level3">
-<h3 class="anchored" data-anchor-id="exercice-1-variance-destimateurs-par-simulation-10-points">Exercice 1 · variance d’estimateurs par simulation (10 points)</h3>
-<p>Soit <span class="math inline">\(n\)</span> réalisations d’une variable aléatoire <span class="math inline">\(Y\)</span> suivant une loi de Bernoulli de moyenne <span class="math inline">\(\theta\)</span>. Pour estimer la variance de <span class="math inline">\(\hat\theta = \frac{1}{n}\sum_{i=1}^n Y_i\)</span>, on peut se servir de la formule de la variance d’une loi de Bernoulli dans laquelle on substitue <span class="math inline">\(\hat\theta\)</span> à <span class="math inline">\(\theta\)</span> : <span class="math display">\[\widehat{\operatorname{var}}(\hat\theta) = \frac{\hat\theta(1-\hat\theta)}{n},\]</span> ou de <span class="math inline">\(v(\hat\theta) = s^2/n\)</span>, où <span class="math inline">\(s^2\)</span> est la variance échantillonnale <span class="math display">\[s^2 = \frac{1}{n-1}\sum_{i=1}^n (Y_i - \bar Y)^2.\]</span></p>
-<ol type="a">
-<li><p>Dérivez une formule pour la variance de <span class="math inline">\(\hat\theta(1-\hat\theta)\)</span>. Si vous utilisez la méthode delta, vous devrez recourir à la méthode delta d’ordre 2 à cause d’une particularité de la variance en <span class="math inline">\(\theta = 1/2\)</span>.</p></li>
-<li><p>Validez l’estimateur de la variance de <span class="math inline">\(\hat\theta(1-\hat\theta)\)</span> dérivé en a) et celui de la variance de <span class="math inline">\(s^2\)</span>, <span class="math display">\[v(s^2) = \frac{\hat\mu_4 - \frac{n-3}{n-1}\,s^4}{n}, \qquad \hat\mu_4 = \frac{1}{n}\sum_{i=1}^n (Y_i - \bar Y)^4.\]</span> Pour ce faire, effectuez une étude de simulation en générant des échantillons de taille <span class="math inline">\(n = 100\)</span>, <span class="math inline">\(1\,000\)</span> et <span class="math inline">\(10\,000\)</span> de <span class="math inline">\(Y\)</span> avec <span class="math inline">\(\theta = 0{,}2\)</span> et <span class="math inline">\(0{,}5\)</span>, et calculez <span class="math inline">\(\hat\theta(1-\hat\theta)\)</span> et <span class="math inline">\(s^2\)</span>.</p></li>
-<li><p>Comparez le taux de convergence des estimateurs <span class="math inline">\(\hat\theta(1-\hat\theta)\)</span> et <span class="math inline">\(s^2\)</span> en <span class="math inline">\(\theta = 0{,}2\)</span> et <span class="math inline">\(0{,}5\)</span> en examinant l’évolution de leur variance empirique et de la moyenne de l’estimateur de leur variance analytique quand la taille d’échantillon augmente. Les formules de ces variances analytiques permettaient-elles de prédire les taux de convergence observés ? Commentez.</p></li>
-<li><p>Comparez la performance des estimateurs <span class="math inline">\(\widehat{\operatorname{var}}(\hat\theta)\)</span> et <span class="math inline">\(v(\hat\theta)\)</span> à partir des résultats de votre étude de simulation.</p></li>
-</ol>
-</section>
-<section id="exercice-2-modèle-logistique-mixte-données-bsi-10-points" class="level3">
-<h3 class="anchored" data-anchor-id="exercice-2-modèle-logistique-mixte-données-bsi-10-points">Exercice 2 · modèle logistique mixte, données BSI (10 points)</h3>
-<p>Les enfants de parents infectés par le VIH vivent des situations stressantes qui peuvent affecter leur développement et leur santé mentale. L’effet de la maladie du parent sur l’enfant peut être aggravé par divers facteurs, dont la consommation de drogues « dures » par le parent. Rotheram-Borus et coll. (2004) ont suivi pendant six ans un échantillon de parents infectés par le VIH résidant à New York et ayant un ou plusieurs adolescents (11 à 21 ans). Vous utiliserez les données de cette étude pour examiner l’effet de la consommation de drogues dures par le parent sur la santé mentale de ses adolescents.</p>
-<p>L’état mental des adolescents a été évalué par le <em>Brief Symptom Inventory</em> ou BSI (Derogatis et Melisaratos, 1983), un inventaire de 53 symptômes et états d’esprit négatifs couvrant un vaste ensemble de troubles psychologiques (dépression, anxiété, etc.). Chaque symptôme est codé sur une échelle de 0 à 4, et l’indice global de sévérité du BSI est la moyenne arithmétique des scores sur ces 53 items. Un score supérieur ou égal à 1 indique la présence d’un trouble psychologique.</p>
-<p>Le jeu de données contient les 215 parents pour lesquels la consommation de drogues dures est connue et leurs 323 enfants adolescents. Les visites de suivi étaient prévues tous les 3 mois pendant au plus 7 ans ; dans les faits, les intervalles entre visites sont souvent irréguliers. Certains parents sont décédés avant la fin du suivi : les données de leurs adolescents sont incluses seulement jusqu’au décès du parent. Le fichier <code>bsi.csv</code> contient les variables suivantes :</p>
+<p>Chaque devoir se remet dans la boîte de dépôt de Brio : un rapport PDF et le code R, qui doit s’exécuter du début à la fin. Les énoncés complets et les grilles de correction sont dans les PDF.</p>
+<section id="devoir-1-20-vendredi-26-février-2027-23-h-55" class="level2">
+<h2 class="anchored" data-anchor-id="devoir-1-20-vendredi-26-février-2027-23-h-55">Devoir 1 · 20 % · vendredi 26 février 2027, 23 h 55</h2>
+<p><a class="portal-button" href="consignes/devoir1.pdf" download="">📄 Consignes et grille du devoir 1 (PDF)</a></p>
+<p>Matière : séances 1 à 4 (rappels, simulation, modèles mixtes, modèles additifs). Rapport d’au plus 15 pages, annexes de code non comprises.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Variable</th>
-<th>Description</th>
+<th>Question</th>
+<th>Contenu</th>
+<th style="text-align: right;">Points</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>pid</code></td>
-<td>identifiant numérique de l’adolescent</td>
+<td>1</td>
+<td>Variance de <span class="math inline">\(\hat\theta(1-\hat\theta)\)</span> pour une loi de Bernoulli (méthode delta d’ordre 2) et validation par simulation</td>
+<td style="text-align: right;">45</td>
 </tr>
 <tr class="even">
-<td><code>temps</code></td>
-<td>temps écoulé depuis le début de l’étude, en mois</td>
+<td>2</td>
+<td>Modèle logistique mixte sur les données BSI : lissage du temps (GAMM), spline linéaire à 18 mois, sélection des effets aléatoires, tests des effets fixes, forme matricielle</td>
+<td style="text-align: right;">45</td>
 </tr>
 <tr class="odd">
-<td><code>parent</code></td>
-<td>identifiant numérique du parent</td>
-</tr>
-<tr class="even">
-<td><code>droguedure</code></td>
-<td>statut de consommation de drogues dures du parent dans les 3 derniers mois : <code>"nonconsommateur"</code>, <code>"consommateur-courant"</code> ou <code>"consommateur-abst"</code> (consommateur qui s’est abstenu dans les 3 derniers mois)</td>
-</tr>
-<tr class="odd">
-<td><code>dbsi_gsi</code></td>
-<td>indicatrice d’un score BSI <span class="math inline">\(\ge 1\)</span> (1 = trouble psychologique, 0 = pas de trouble)</td>
+<td>—</td>
+<td>Qualité du rapport (5) et du code (5)</td>
+<td style="text-align: right;">10</td>
 </tr>
 </tbody>
 </table>
-<p>Analysez ces données à l’aide d’un modèle mixte généralisé pour une réponse dichotomique. Pour favoriser la convergence, adoptez le lien logit, lien canonique dans ce contexte. Bien que les enfants soient nichés dans leurs parents, la variabilité expliquée au niveau des parents est négligeable : utilisez des effets aléatoires seulement au niveau des enfants.</p>
-<ol type="a">
-<li>Présentez graphiquement et décrivez la forme de la relation entre la log-cote de trouble psychologique et le temps par lissage (régression semi-paramétrique). Incluez le statut de consommation de drogues dures comme effet fixe et l’identifiant de l’enfant comme effet aléatoire, mais pas d’interaction entre le statut de consommation et le temps, ni d’effet aléatoire pour le temps (non pris en charge par le module <code>mgcv</code>).</li>
-</ol>
-<p>Peu importe vos observations en a), adoptez ensuite un modèle de spline linéaire avec changement de pente à 18 mois, en définissant la variable</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>bsi<span class="sc">$</span>apres18mois <span class="ot">&lt;-</span> <span class="fu">pmax</span>(<span class="dv">0</span>, bsi<span class="sc">$</span>temps <span class="sc">-</span> <span class="dv">18</span>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
-<p>et en l’incluant dans le modèle logistique mixte. Les modèles suivants sont donc paramétriques. Vous rencontrerez probablement des problèmes de convergence pour certains modèles ; si vous n’arrivez pas à les résoudre, répondez en supposant que les estimations des paramètres sont correctes (elles sont généralement raisonnables malgré ces avertissements).</p>
-<ol start="2" type="a">
-<li><p>Sélectionnez les effets aléatoires du modèle. Incluez dans les modèles comparés des effets fixes pour le temps (y compris le changement de pente à 18 mois), le statut de consommation de drogues dures et leur interaction.</p></li>
-<li><p>Répondez ensuite aux questions suivantes sur les effets fixes. Y a-t-il une interaction entre la consommation de drogues dures par le parent et le temps ? Y a-t-il une différence entre les statuts de consommation ? Si oui, lesquels diffèrent ?</p></li>
-<li><p>Écrivez le modèle retenu aux étapes b) et c) sous forme matricielle, <span class="math inline">\(\operatorname{logit}\left(E[Y_i \mid X_i]\right) = X_i\beta + Z_i\mathbf{b}_i\)</span>, où <span class="math inline">\(i = 1, \dots, 323\)</span> indice les enfants. Donnez en particulier les dimensions de <span class="math inline">\(Y_i\)</span>, <span class="math inline">\(X_i\)</span> et <span class="math inline">\(Z_i\)</span>, et écrivez explicitement <span class="math inline">\(\mathbf{b}_i\)</span> et <span class="math inline">\(\beta\)</span>. Quels sont les paramètres du modèle retenu ?</p></li>
-</ol>
-<section id="références" class="level4">
-<h4 class="anchored" data-anchor-id="références">Références</h4>
-<ul>
-<li>Derogatis, L. R. et Melisaratos, N. (1983). The Brief Symptom Inventory: an introductory report. <em>Psychological Medicine</em>, 13(3), 595–605.</li>
-<li>Rotheram-Borus, M. J., Lee, M. et coll. (2004). Six-year intervention outcomes for adolescent children of parents with the human immunodeficiency virus. <em>Archives of Pediatrics &amp; Adolescent Medicine</em>, 158(8), 742–748.</li>
-</ul>
+<p>Données : <code>bsi.csv</code>, déposé sur Brio.</p>
 </section>
-</section>
-</section>
-<section id="devoir-2-semaine-7" class="level2">
-<h2 class="anchored" data-anchor-id="devoir-2-semaine-7">Devoir 2 · semaine 7</h2>
-<section id="gee-et-modèle-log-binomial-marginal-pleuropneumonie" class="level3">
-<h3 class="anchored" data-anchor-id="gee-et-modèle-log-binomial-marginal-pleuropneumonie">GEE et modèle log-binomial marginal, pleuropneumonie</h3>
-<p>Cet exercice utilise le jeu de données de la pleuropneumonie contagieuse bovine (<code>cbpp</code> du module R <code>lme4</code> ; Lesnoff et coll., 2004), où des échantillons sanguins ont été prélevés tous les 3 mois dans 15 troupeaux en Éthiopie. Au cours 3, un modèle log-binomial mixte a été ajusté à ces données pour estimer le rapport d’incidence entre périodes successives. Vous estimerez ici ces mêmes rapports d’incidence, avec un intervalle de confiance, sous un modèle log-binomial marginal ayant le troupeau comme grappe, à l’aide d’équations d’estimation généralisées.</p>
-<p>Ce jeu de données comporte des valeurs manquantes pour certaines périodes chez certains troupeaux. On suppose que seule l’incidence est manquante et que la taille du troupeau est connue à toutes les périodes. Le fichier <a href="donnees/cbppw.csv"><code>cbppw.csv</code></a> contient les données en format large, avec la taille des troupeaux à toutes les périodes et les proportions d’incidence <code>p.1</code> à <code>p.4</code>, pour vous aider à traiter les données manquantes.</p>
-<ol type="a">
-<li><p>Expliquez pourquoi une analyse naïve portant uniquement sur les données observées pourrait produire des estimations biaisées.</p></li>
-<li><p>Choisissez une méthode de traitement des données manquantes et justifiez-la. Indiquez les postulats requis sur la nature des valeurs manquantes pour que votre analyse soit valide.</p></li>
-<li><p>Présentez les rapports d’incidence et leurs intervalles de confiance sous un modèle log-binomial marginal ayant le troupeau comme grappe, estimé par GEE avec un traitement approprié des valeurs manquantes.</p></li>
-<li><p>Comparez les estimations des coefficients et de leurs erreurs-types entre le modèle log-binomial marginal et le modèle log-binomial mixte avec effet aléatoire du troupeau du programme <code>pleuropneumonie.R</code> du cours 3. Que constatez-vous ?</p></li>
-</ol>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Astuce</span>Remarques
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Si vous optez pour l’imputation multiple, modélisez les proportions <code>p.1</code> à <code>p.4</code> comme des variables continues : le module <code>mice</code> ne permet pas de modéliser des variables binomiales.</li>
-<li>Si vous optez pour la pondération par l’inverse de la probabilité de censure, notez qu’il n’y a pas de censure au temps 3 et que la probabilité de censure au temps 4 ne peut être obtenue que pour les troupeaux mesurés aux temps 2 et 3.</li>
-</ul>
-</div>
-</div>
-<section id="référence" class="level4">
-<h4 class="anchored" data-anchor-id="référence">Référence</h4>
-<ul>
-<li>Lesnoff, M., Laval, G., Bonnet, P. et coll. (2004). Within-herd spread of contagious bovine pleuropneumonia in Ethiopian highlands. <em>Preventive Veterinary Medicine</em>, 64(1), 27–40.</li>
-</ul>
+<section id="devoir-2-20-vendredi-23-avril-2027-23-h-55" class="level2">
+<h2 class="anchored" data-anchor-id="devoir-2-20-vendredi-23-avril-2027-23-h-55">Devoir 2 · 20 % · vendredi 23 avril 2027, 23 h 55</h2>
+<p><a class="portal-button" href="consignes/devoir2.pdf" download="">📄 Consignes et grille du devoir 2 (PDF)</a></p>
+<p>Matière : séances 6 à 11 (GEE, données manquantes, tests multiples). Rapport d’au plus 12 pages, annexes de code non comprises.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Contenu</th>
+<th style="text-align: right;">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Pleuropneumonie bovine : modèle log-binomial marginal par GEE avec traitement des données manquantes (imputation multiple ou IPCW), comparaison au modèle mixte</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Tests multiples sur les données <code>golub</code> : statistiques de Welch, contrôle du FWER et du FDR, graphique et tableau à un FDR de 5 %</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>Qualité du rapport (5) et du code (5)</td>
+<td style="text-align: right;">10</td>
+</tr>
+</tbody>
+</table>
+<p>Données : <a href="donnees/cbppw.csv"><code>cbppw.csv</code></a> ; jeu de données <code>golub</code> du module <code>multtest</code> (Bioconductor).</p>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->

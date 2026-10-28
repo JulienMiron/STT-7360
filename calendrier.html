@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d879eba7f9f7abf158eeecada124be5f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f28db2f28e40bd2319d0714e6e487a7d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,16 +108,20 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Calendrier</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./notes.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./devoirs.html"> 
 <span class="menu-text">Devoirs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projet.html"> 
-<span class="menu-text">Projet de recherche</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./etudes-de-cas.html"> 
 <span class="menu-text">Études de cas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./travail-de-synthese.html"> 
+<span class="menu-text">Synthèse</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -148,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Dernière modification</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">14 octobre 2026</p>
+      <p class="date-modified">28 octobre 2026</p>
     </div>
   </div>
     
@@ -166,7 +170,7 @@ STT-7360 — Méthodes biostatistiques
 <section id="calendrier" class="level1">
 <h1>Calendrier</h1>
 <p class="hero-lead">
-Hiver 2027 · 15 semaines, semaine de lecture en semaine 9.
+Hiver 2027 · 13 vendredis de cours, 8 h 30 à 11 h 20.
 </p>
 </section>
 </div>
@@ -183,133 +187,152 @@ Hiver 2027 · 15 semaines, semaine de lecture en semaine 9.
 <p>Ce calendrier est fourni à titre indicatif. La version officielle est celle déposée sur <strong>Brio</strong> : en cas de doute ou de différence entre les deux, c’est l’information sur <strong>Brio</strong> qui prévaut.</p>
 </div>
 </div>
-<p><em>M</em> = tronc commun (maîtrise et doctorat), <em>D</em> = complément doctorat.</p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 7%">
-<col style="width: 21%">
-<col style="width: 42%">
-<col style="width: 28%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>Sem.</th>
+<th>Date</th>
 <th>Thème</th>
-<th>Contenu et activités</th>
-<th>Volet recherche / livrable</th>
+<th>Documents</th>
+<th>Échéances</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>1</td>
-<td>Introduction et rappels</td>
-<td>Vraisemblance, modèles linéaires généralisés, inférence asymptotique (notes <em>Rappel</em>). Présentation du projet de session.</td>
-<td>Atelier : flux de travail reproductible (Git, Quarto, <code>renv</code>).</td>
+<td>15 janv.</td>
+<td>Introduction et rappels d’inférence asymptotique, estimateurs M</td>
+<td><a href="plan_STT-7360_H27.pdf">Plan de cours</a> · <a href="notes/01_rappels.pdf">Notes 1</a></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>2</td>
-<td>Simulations</td>
-<td>Principes, générateurs, cadre ADEMP, mesures de performance (biais, EQM, couverture), erreur Monte Carlo, parallélisation.</td>
-<td>Exercice : critiquer la section « simulations » d’un article publié.</td>
+<td>22 janv.</td>
+<td>Études de simulation</td>
+<td><a href="notes/02_simulations.pdf">Notes 2</a> · <a href="consignes/devoir1.pdf">Devoir 1</a></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>3</td>
-<td>Données corrélées complexes (I)</td>
-<td>Modèles mixtes linéaires et généralisés ; effet conditionnel vs marginal (Wu, ch.&nbsp;2 ; Fitzmaurice et coll.). <em>D</em> : GAM mixtes, Jiang et Nguyen 3.5.2.</td>
-<td><span class="cal-exam"><strong>Devoir 1</strong></span> (modèles mixtes, données BSI).</td>
+<td>29 janv.</td>
+<td>Modèles linéaires mixtes et modèles linéaires mixtes généralisés</td>
+<td><a href="notes/03_modeles_mixtes.pdf">Notes 3</a></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>4</td>
-<td>Données corrélées complexes (II)</td>
-<td>GEE, estimateur sandwich, comparaison GEE/GLMM (articles Zhang et coll.).</td>
-<td>Choix des articles à présenter.</td>
+<td>5 févr.</td>
+<td>Modèles additifs généralisés (mixtes)</td>
+<td><a href="notes/04_modeles_additifs.pdf">Notes 4</a></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>5</td>
-<td><span class="cal-labo"><strong>Étude de cas 1</strong></span></td>
-<td>Neuhaus et McCulloch (2006) : corrélation entre effets aléatoires et covariables ; régression logistique conditionnelle (données <code>naisga</code>).</td>
-<td>Fiche méthodologique + reproduction d’un tableau de l’article.</td>
+<td>12 févr.</td>
+<td><span class="cal-labo"><strong>Étude de cas 1</strong></span> : effets intra et inter-grappes</td>
+<td><a href="notes/05_etude_de_cas_1.pdf">Notes 5</a> · <a href="consignes/etude_de_cas_1.pdf">Consignes</a></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>6</td>
-<td>Théorie semi-paramétrique (I)</td>
-<td>Fonction d’influence, M-estimateurs, robustesse (Wu, ch.&nbsp;9 ; Tsiatis, ch.&nbsp;3). Application : modèle mixte robuste (<code>SleepStudyRobuste.R</code>).</td>
-<td><span class="cal-projet"><strong>Proposition de projet</strong></span> (2 pages).</td>
+<td>19 févr.</td>
+<td>GEE, fonction d’influence et robustesse ; <em>D</em> : théorie semi-paramétrique</td>
+<td><a href="notes/06_gee_influence_robustesse.pdf">Notes 6</a></td>
+<td><span class="cal-projet"><strong>Choix de l’article</strong></span></td>
 </tr>
 <tr class="odd">
 <td>7</td>
-<td>Théorie semi-paramétrique (II)</td>
-<td>Équations d’estimation, GEE vues comme M-estimation, efficacité. <em>D</em> : Tsiatis, ch.&nbsp;4 ; van der Laan et Rose, ch.&nbsp;5.</td>
-<td><span class="cal-exam"><strong>Devoir 2</strong></span> (GEE, pleuropneumonie).</td>
+<td>26 févr.</td>
+<td><span class="cal-labo"><strong>Étude de cas 2</strong></span> : estimation ciblée de l’effet d’un biomarqueur</td>
+<td><a href="notes/07_etude_de_cas_2.pdf">Notes 7</a> · <a href="consignes/etude_de_cas_2.pdf">Consignes</a></td>
+<td><span class="cal-exam"><strong>Devoir 1</strong></span></td>
 </tr>
 <tr class="even">
-<td>8</td>
-<td><span class="cal-labo"><strong>Étude de cas 2</strong></span></td>
-<td>Méthodes ciblées pour variables continues (Tuglus et van der Laan) ; TMLE, découverte de biomarqueurs.</td>
-<td>Fiche méthodologique + petite simulation comparant TMLE et régression.</td>
+<td><span class="cal-off">8</span></td>
+<td>5 mars</td>
+<td>SEMAINE DE LECTURE</td>
+<td></td>
+<td></td>
 </tr>
 <tr class="odd">
-<td><span class="cal-off">9</span></td>
-<td></td>
-<td>SEMAINE DE LECTURE — rencontres individuelles sur les projets</td>
+<td>9</td>
+<td>12 mars</td>
+<td>Données manquantes I : mécanismes, vraisemblance, imputation multiple</td>
+<td><a href="notes/08_donnees_manquantes_1.pdf">Notes 8</a></td>
 <td></td>
 </tr>
 <tr class="even">
 <td>10</td>
-<td>Données manquantes (I)</td>
-<td>Mécanismes MCAR/MAR/MNAR, imputation multiple (Wu, sect. 3.2–3.5).</td>
-<td>Exercice d’imputation (données dentaires).</td>
+<td>19 mars</td>
+<td>Données manquantes II : pondération par probabilité inverse, GEE pondérées</td>
+<td><a href="notes/09_donnees_manquantes_2.pdf">Notes 9</a> · <a href="consignes/devoir2.pdf">Devoir 2</a></td>
+<td></td>
 </tr>
 <tr class="odd">
-<td>11</td>
-<td>Données manquantes (II)</td>
-<td>Pondération par l’inverse de la probabilité (IPW), estimateurs doublement robustes ; lien avec la fonction d’influence (Wu 10.3.1).</td>
-<td><span class="cal-projet"><strong>Rapport d’étape</strong></span> du projet (résultats préliminaires).</td>
+<td><span class="cal-off">11</span></td>
+<td>26 mars</td>
+<td>VENDREDI SAINT : PAS DE COURS</td>
+<td></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>12</td>
-<td><span class="cal-labo"><strong>Étude de cas 3</strong></span></td>
-<td>Erreur de mesure et échantillonnage à deux phases (Breslow et Chatterjee, 1999 ; données NWTS). Comparaison d’estimateurs.</td>
-<td>Fiche méthodologique + rapport d’arbitrage simulé de l’article.</td>
+<td>2 avril</td>
+<td><span class="cal-labo"><strong>Étude de cas 3</strong></span> : échantillonnage à deux phases et erreur de mesure</td>
+<td><a href="notes/10_etude_de_cas_3.pdf">Notes 10</a> · <a href="consignes/etude_de_cas_3.pdf">Consignes</a></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>13</td>
+<td>9 avril</td>
 <td>Tests multiples</td>
-<td>FWER, FDR, procédures pas-à-pas, rééchantillonnage (Farcomeni ; Dudoit et van der Laan, données ApoAI).</td>
-<td>Résolution de problèmes en équipe.</td>
+<td><a href="notes/11_tests_multiples.pdf">Notes 11</a></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>14</td>
-<td><span class="cal-presentations"><strong>Présentations d’articles</strong></span></td>
-<td>Présentations de 20 min + 10 min de discussion animée par un « arbitre » désigné.</td>
-<td>Rapport d’arbitrage écrit (1–2 pages).</td>
+<td>16 avril</td>
+<td><span class="cal-presentations"><strong>Présentations</strong></span> des travaux de synthèse (1)</td>
+<td><a href="consignes/travail_de_synthese.pdf">Consignes</a></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>15</td>
-<td><span class="cal-presentations"><strong>Colloque de fin de session</strong></span></td>
-<td>Présentations des projets (format congrès : 12 min + questions).</td>
-<td><span class="cal-projet"><strong>Article final</strong></span> (remis une semaine plus tard).</td>
+<td>23 avril</td>
+<td><span class="cal-presentations"><strong>Présentations</strong></span> des travaux de synthèse (2)</td>
+<td><a href="consignes/travail_de_synthese.pdf">Consignes</a></td>
+<td><span class="cal-exam"><strong>Devoir 2</strong></span></td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>26 avril au 2 mai</td>
+<td>Période d’examens</td>
+<td></td>
+<td><span class="cal-exam"><strong>Examen final</strong></span> (date à confirmer)</td>
 </tr>
 </tbody>
 </table>
+<p><em>D</em> = complément pour le doctorat. Les devoirs sont à remettre à 23 h 55 le jour indiqué ; le code du travail de synthèse est déposé la veille de la présentation, à 23 h 55.</p>
 <script>
 // Pandoc ne génère pas de colspan pour les tableaux en pipes : on fusionne
-// la ligne de la semaine de lecture (repérée par .cal-off) en une seule
-// cellule pleine largeur après coup.
+// chaque ligne sans cours (repérée par .cal-off) en une seule cellule pleine
+// largeur après coup.
 (function () {
-  var marqueur = document.querySelector('#quarto-document-content .cal-off');
-  if (!marqueur) return;
-  var ligne = marqueur.closest('tr');
-  if (!ligne || ligne.children.length < 4) return;
-
-  var sujet = ligne.children[2].textContent.trim();
-
-  ligne.innerHTML = '';
-  var cellule = document.createElement('td');
-  cellule.className = 'cal-off cal-off-banner';
-  cellule.colSpan = 4;
-  cellule.textContent = 'Semaine 9 · ' + sujet;
-  ligne.appendChild(cellule);
+  var marqueurs = document.querySelectorAll('#quarto-document-content .cal-off');
+  marqueurs.forEach(function (marqueur) {
+    var ligne = marqueur.closest('tr');
+    if (!ligne || ligne.children.length < 5) return;
+    var semaine = ligne.children[0].textContent.trim();
+    var date = ligne.children[1].textContent.trim();
+    var sujet = ligne.children[2].textContent.trim();
+    var nb = ligne.children.length;
+    ligne.innerHTML = '';
+    var cellule = document.createElement('td');
+    cellule.className = 'cal-off cal-off-banner';
+    cellule.colSpan = nb;
+    cellule.textContent = 'Semaine ' + semaine + ' · ' + date + ' · ' + sujet;
+    ligne.appendChild(cellule);
+  });
 })();
 </script>
 
